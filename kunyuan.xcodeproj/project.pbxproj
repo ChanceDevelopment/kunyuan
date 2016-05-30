@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EAF785B21CFC87F600820CE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B11CFC87F600820CE0 /* main.m */; };
+		EAF785B51CFC87F600820CE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B41CFC87F600820CE0 /* AppDelegate.m */; };
+		EAF785B81CFC87F600820CE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B71CFC87F600820CE0 /* ViewController.m */; };
+		EAF785BB1CFC87F600820CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF785B91CFC87F600820CE0 /* Main.storyboard */; };
+		EAF785BD1CFC87F600820CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAF785BC1CFC87F600820CE0 /* Assets.xcassets */; };
+		EAF785C01CFC87F600820CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF785BE1CFC87F600820CE0 /* LaunchScreen.storyboard */; };
+		EAF785CB1CFC87F600820CE0 /* kunyuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785CA1CFC87F600820CE0 /* kunyuanTests.m */; };
+		EAF785D61CFC87F600820CE0 /* kunyuanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785D51CFC87F600820CE0 /* kunyuanUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAF785C71CFC87F600820CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAF785A51CFC87F600820CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAF785AC1CFC87F600820CE0;
+			remoteInfo = kunyuan;
+		};
+		EAF785D21CFC87F600820CE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAF785A51CFC87F600820CE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAF785AC1CFC87F600820CE0;
+			remoteInfo = kunyuan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EAF785AD1CFC87F600820CE0 /* kunyuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kunyuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF785B11CFC87F600820CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAF785B31CFC87F600820CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAF785B41CFC87F600820CE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAF785B61CFC87F600820CE0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAF785B71CFC87F600820CE0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAF785BA1CFC87F600820CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAF785BC1CFC87F600820CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAF785BF1CFC87F600820CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EAF785C11CFC87F600820CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF785C61CFC87F600820CE0 /* kunyuanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kunyuanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF785CA1CFC87F600820CE0 /* kunyuanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kunyuanTests.m; sourceTree = "<group>"; };
+		EAF785CC1CFC87F600820CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kunyuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF785D51CFC87F600820CE0 /* kunyuanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kunyuanUITests.m; sourceTree = "<group>"; };
+		EAF785D71CFC87F600820CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAF785AA1CFC87F600820CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785C31CFC87F600820CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785CE1CFC87F600820CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAF785A41CFC87F600820CE0 = {
+			isa = PBXGroup;
+			children = (
+				EAF785AF1CFC87F600820CE0 /* kunyuan */,
+				EAF785C91CFC87F600820CE0 /* kunyuanTests */,
+				EAF785D41CFC87F600820CE0 /* kunyuanUITests */,
+				EAF785AE1CFC87F600820CE0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAF785AE1CFC87F600820CE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAF785AD1CFC87F600820CE0 /* kunyuan.app */,
+				EAF785C61CFC87F600820CE0 /* kunyuanTests.xctest */,
+				EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAF785AF1CFC87F600820CE0 /* kunyuan */ = {
+			isa = PBXGroup;
+			children = (
+				EAF785B31CFC87F600820CE0 /* AppDelegate.h */,
+				EAF785B41CFC87F600820CE0 /* AppDelegate.m */,
+				EAF785B61CFC87F600820CE0 /* ViewController.h */,
+				EAF785B71CFC87F600820CE0 /* ViewController.m */,
+				EAF785B91CFC87F600820CE0 /* Main.storyboard */,
+				EAF785BC1CFC87F600820CE0 /* Assets.xcassets */,
+				EAF785BE1CFC87F600820CE0 /* LaunchScreen.storyboard */,
+				EAF785C11CFC87F600820CE0 /* Info.plist */,
+				EAF785B01CFC87F600820CE0 /* Supporting Files */,
+			);
+			path = kunyuan;
+			sourceTree = "<group>";
+		};
+		EAF785B01CFC87F600820CE0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAF785B11CFC87F600820CE0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAF785C91CFC87F600820CE0 /* kunyuanTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAF785CA1CFC87F600820CE0 /* kunyuanTests.m */,
+				EAF785CC1CFC87F600820CE0 /* Info.plist */,
+			);
+			path = kunyuanTests;
+			sourceTree = "<group>";
+		};
+		EAF785D41CFC87F600820CE0 /* kunyuanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAF785D51CFC87F600820CE0 /* kunyuanUITests.m */,
+				EAF785D71CFC87F600820CE0 /* Info.plist */,
+			);
+			path = kunyuanUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAF785AC1CFC87F600820CE0 /* kunyuan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF785DA1CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuan" */;
+			buildPhases = (
+				EAF785A91CFC87F600820CE0 /* Sources */,
+				EAF785AA1CFC87F600820CE0 /* Frameworks */,
+				EAF785AB1CFC87F600820CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kunyuan;
+			productName = kunyuan;
+			productReference = EAF785AD1CFC87F600820CE0 /* kunyuan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAF785C51CFC87F600820CE0 /* kunyuanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF785DD1CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanTests" */;
+			buildPhases = (
+				EAF785C21CFC87F600820CE0 /* Sources */,
+				EAF785C31CFC87F600820CE0 /* Frameworks */,
+				EAF785C41CFC87F600820CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF785C81CFC87F600820CE0 /* PBXTargetDependency */,
+			);
+			name = kunyuanTests;
+			productName = kunyuanTests;
+			productReference = EAF785C61CFC87F600820CE0 /* kunyuanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EAF785D01CFC87F600820CE0 /* kunyuanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF785E01CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanUITests" */;
+			buildPhases = (
+				EAF785CD1CFC87F600820CE0 /* Sources */,
+				EAF785CE1CFC87F600820CE0 /* Frameworks */,
+				EAF785CF1CFC87F600820CE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAF785D31CFC87F600820CE0 /* PBXTargetDependency */,
+			);
+			name = kunyuanUITests;
+			productName = kunyuanUITests;
+			productReference = EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAF785A51CFC87F600820CE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = HeDongMing;
+				TargetAttributes = {
+					EAF785AC1CFC87F600820CE0 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EAF785C51CFC87F600820CE0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EAF785AC1CFC87F600820CE0;
+					};
+					EAF785D01CFC87F600820CE0 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EAF785AC1CFC87F600820CE0;
+					};
+				};
+			};
+			buildConfigurationList = EAF785A81CFC87F600820CE0 /* Build configuration list for PBXProject "kunyuan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAF785A41CFC87F600820CE0;
+			productRefGroup = EAF785AE1CFC87F600820CE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAF785AC1CFC87F600820CE0 /* kunyuan */,
+				EAF785C51CFC87F600820CE0 /* kunyuanTests */,
+				EAF785D01CFC87F600820CE0 /* kunyuanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAF785AB1CFC87F600820CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF785C01CFC87F600820CE0 /* LaunchScreen.storyboard in Resources */,
+				EAF785BD1CFC87F600820CE0 /* Assets.xcassets in Resources */,
+				EAF785BB1CFC87F600820CE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785C41CFC87F600820CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785CF1CFC87F600820CE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAF785A91CFC87F600820CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF785B81CFC87F600820CE0 /* ViewController.m in Sources */,
+				EAF785B51CFC87F600820CE0 /* AppDelegate.m in Sources */,
+				EAF785B21CFC87F600820CE0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785C21CFC87F600820CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF785CB1CFC87F600820CE0 /* kunyuanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAF785CD1CFC87F600820CE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF785D61CFC87F600820CE0 /* kunyuanUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAF785C81CFC87F600820CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAF785AC1CFC87F600820CE0 /* kunyuan */;
+			targetProxy = EAF785C71CFC87F600820CE0 /* PBXContainerItemProxy */;
+		};
+		EAF785D31CFC87F600820CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAF785AC1CFC87F600820CE0 /* kunyuan */;
+			targetProxy = EAF785D21CFC87F600820CE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EAF785B91CFC87F600820CE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAF785BA1CFC87F600820CE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EAF785BE1CFC87F600820CE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAF785BF1CFC87F600820CE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAF785D81CFC87F600820CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAF785D91CFC87F600820CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAF785DB1CFC87F600820CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kunyuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EAF785DC1CFC87F600820CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = kunyuan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EAF785DE1CFC87F600820CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kunyuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kunyuan.app/kunyuan";
+			};
+			name = Debug;
+		};
+		EAF785DF1CFC87F600820CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = kunyuanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/kunyuan.app/kunyuan";
+			};
+			name = Release;
+		};
+		EAF785E11CFC87F600820CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kunyuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kunyuan;
+			};
+			name = Debug;
+		};
+		EAF785E21CFC87F600820CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = kunyuanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = kunyuan;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAF785A81CFC87F600820CE0 /* Build configuration list for PBXProject "kunyuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF785D81CFC87F600820CE0 /* Debug */,
+				EAF785D91CFC87F600820CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF785DA1CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF785DB1CFC87F600820CE0 /* Debug */,
+				EAF785DC1CFC87F600820CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAF785DD1CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF785DE1CFC87F600820CE0 /* Debug */,
+				EAF785DF1CFC87F600820CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EAF785E01CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAF785E11CFC87F600820CE0 /* Debug */,
+				EAF785E21CFC87F600820CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAF785A51CFC87F600820CE0 /* Project object */;
+}
