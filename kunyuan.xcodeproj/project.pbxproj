@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EAF785AD1CFC87F600820CE0 /* kunyuan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kunyuan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "坤元外卖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF785B11CFC87F600820CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAF785B31CFC87F600820CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAF785B41CFC87F600820CE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		EAF785AE1CFC87F600820CE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAF785AD1CFC87F600820CE0 /* kunyuan.app */,
+				EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */,
 				EAF785C61CFC87F600820CE0 /* kunyuanTests.xctest */,
 				EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */,
 			);
@@ -157,7 +157,7 @@
 			);
 			name = kunyuan;
 			productName = kunyuan;
-			productReference = EAF785AD1CFC87F600820CE0 /* kunyuan.app */;
+			productReference = EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EAF785C51CFC87F600820CE0 /* kunyuanTests */ = {
@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					EAF785AC1CFC87F600820CE0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2HE3DDFLNU;
 					};
 					EAF785C51CFC87F600820CE0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -415,11 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: ZhuangZhuang Li (B8G39U3PGE)";
 				INFOPLIST_FILE = kunyuan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuan;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "坤元外卖";
+				PROVISIONING_PROFILE = "ea5a5873-4acc-433a-91d8-344a7661e748";
 			};
 			name = Debug;
 		};
@@ -427,11 +430,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = kunyuan/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuan;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "坤元外卖";
 			};
 			name = Release;
 		};
@@ -500,6 +504,7 @@
 				EAF785DC1CFC87F600820CE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAF785DD1CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +513,7 @@
 				EAF785DF1CFC87F600820CE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAF785E01CFC87F600820CE0 /* Build configuration list for PBXNativeTarget "kunyuanUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +522,7 @@
 				EAF785E21CFC87F600820CE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
