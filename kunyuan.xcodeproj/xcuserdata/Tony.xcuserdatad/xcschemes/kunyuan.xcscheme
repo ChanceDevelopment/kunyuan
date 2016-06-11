@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EAF785AC1CFC87F600820CE0"
-               BuildableName = "kunyuan.app"
+               BuildableName = "&#x5764;&#x5143;&#x5916;&#x5356;.app"
                BlueprintName = "kunyuan"
                ReferencedContainer = "container:kunyuan.xcodeproj">
             </BuildableReference>
@@ -53,7 +53,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAF785AC1CFC87F600820CE0"
-            BuildableName = "kunyuan.app"
+            BuildableName = "&#x5764;&#x5143;&#x5916;&#x5356;.app"
             BlueprintName = "kunyuan"
             ReferencedContainer = "container:kunyuan.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAF785AC1CFC87F600820CE0"
-            BuildableName = "kunyuan.app"
+            BuildableName = "&#x5764;&#x5143;&#x5916;&#x5356;.app"
             BlueprintName = "kunyuan"
             ReferencedContainer = "container:kunyuan.xcodeproj">
          </BuildableReference>
@@ -95,7 +95,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EAF785AC1CFC87F600820CE0"
-            BuildableName = "kunyuan.app"
+            BuildableName = "&#x5764;&#x5143;&#x5916;&#x5356;.app"
             BlueprintName = "kunyuan"
             ReferencedContainer = "container:kunyuan.xcodeproj">
          </BuildableReference>
