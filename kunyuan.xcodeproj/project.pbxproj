@@ -549,7 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danertu.kunyuan;
 				PRODUCT_NAME = "坤元外卖";
-				PROVISIONING_PROFILE = "ea5a5873-4acc-433a-91d8-344a7661e748";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
