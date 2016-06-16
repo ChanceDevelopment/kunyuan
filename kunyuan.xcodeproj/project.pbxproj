@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA364A0B1D12417B00B47D6C /* HeLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EA364A091D12417B00B47D6C /* HeLoginVC.m */; };
+		EA364A0C1D12417B00B47D6C /* HeLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA364A0A1D12417B00B47D6C /* HeLoginVC.xib */; };
+		EA364A101D1246A500B47D6C /* HeInstructionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA364A0F1D1246A500B47D6C /* HeInstructionView.m */; };
 		EA4FE73C1D0CF61E00533239 /* EaseChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE72E1D0CF61E00533239 /* EaseChineseToPinyin.m */; };
 		EA4FE73D1D0CF61E00533239 /* EaseConvertToCommonEmoticonsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE7301D0CF61E00533239 /* EaseConvertToCommonEmoticonsHelper.m */; };
 		EA4FE73E1D0CF61E00533239 /* EaseEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FE7331D0CF61E00533239 /* EaseEmoji.m */; };
@@ -579,6 +582,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA364A081D12417B00B47D6C /* HeLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeLoginVC.h; sourceTree = "<group>"; };
+		EA364A091D12417B00B47D6C /* HeLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeLoginVC.m; sourceTree = "<group>"; };
+		EA364A0A1D12417B00B47D6C /* HeLoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeLoginVC.xib; sourceTree = "<group>"; };
+		EA364A0E1D1246A500B47D6C /* HeInstructionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeInstructionView.h; sourceTree = "<group>"; };
+		EA364A0F1D1246A500B47D6C /* HeInstructionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeInstructionView.m; sourceTree = "<group>"; };
 		EA4FE72D1D0CF61E00533239 /* EaseChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseChineseToPinyin.h; sourceTree = "<group>"; };
 		EA4FE72E1D0CF61E00533239 /* EaseChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseChineseToPinyin.m; sourceTree = "<group>"; };
 		EA4FE72F1D0CF61E00533239 /* EaseConvertToCommonEmoticonsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseConvertToCommonEmoticonsHelper.h; sourceTree = "<group>"; };
@@ -1691,6 +1699,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA364A071D12404B00B47D6C /* LoginEnroll */ = {
+			isa = PBXGroup;
+			children = (
+				EA364A081D12417B00B47D6C /* HeLoginVC.h */,
+				EA364A091D12417B00B47D6C /* HeLoginVC.m */,
+				EA364A0A1D12417B00B47D6C /* HeLoginVC.xib */,
+			);
+			name = LoginEnroll;
+			sourceTree = "<group>";
+		};
+		EA364A0D1D12469400B47D6C /* HeInstructionView */ = {
+			isa = PBXGroup;
+			children = (
+				EA364A0E1D1246A500B47D6C /* HeInstructionView.h */,
+				EA364A0F1D1246A500B47D6C /* HeInstructionView.m */,
+			);
+			name = HeInstructionView;
+			sourceTree = "<group>";
+		};
 		EA4FE72C1D0CF61E00533239 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -3379,6 +3406,8 @@
 		EA4FECA01D0CF9DE00533239 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA364A0D1D12469400B47D6C /* HeInstructionView */,
+				EA364A071D12404B00B47D6C /* LoginEnroll */,
 				EA4FECF41D0CFD0D00533239 /* TabBar */,
 				EA4FECA11D0CF9DE00533239 /* Base */,
 				EA4FECA71D0CF9DE00533239 /* RDVTabBarController */,
@@ -4009,6 +4038,7 @@
 				EA4FEC8D1D0CF91700533239 /* ShareSDKUI.bundle in Resources */,
 				EA4FEA9B1D0CF65A00533239 /* i2KEPCSingleComponentPickerView.xib in Resources */,
 				EA4FEA5F1D0CF65A00533239 /* BrowserView.xib in Resources */,
+				EA364A0C1D12417B00B47D6C /* HeLoginVC.xib in Resources */,
 				EA4FECB01D0CF9DE00533239 /* HeBaseViewController.xib in Resources */,
 				EA4FEA891D0CF65A00533239 /* fail@2x.png in Resources */,
 				EA4FEC901D0CF91700533239 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
@@ -4243,6 +4273,7 @@
 				EA4FEB0D1D0CF65A00533239 /* NSObject+RACPropertySubscribing.m in Sources */,
 				EA4FEA5E1D0CF65A00533239 /* BrowserView.m in Sources */,
 				EA4FEB5F1D0CF65A00533239 /* MKAnnotationView+WebCache.m in Sources */,
+				EA364A0B1D12417B00B47D6C /* HeLoginVC.m in Sources */,
 				EA4FEAE51D0CF65A00533239 /* NSAttributedString+MLExpression.m in Sources */,
 				EA4FED831D0CFEBF00533239 /* DFUserLineCellAdapterManager.m in Sources */,
 				EA4FEBAB1D0CF6EC00533239 /* TZAssetCell.m in Sources */,
@@ -4362,6 +4393,7 @@
 				EA4FEC571D0CF70E00533239 /* QNResponseInfo.m in Sources */,
 				EA4FEAC81D0CF65A00533239 /* MJPhotoView.m in Sources */,
 				EA4FEA7F1D0CF65A00533239 /* RRDevice.m in Sources */,
+				EA364A101D1246A500B47D6C /* HeInstructionView.m in Sources */,
 				EA4FEAB21D0CF65A00533239 /* IQSegmentedNextPrevious.m in Sources */,
 				EA4FEDB31D0CFEC000533239 /* MLClickColorLinkLabel.m in Sources */,
 				EA4FEA411D0CF65A00533239 /* AFHTTPRequestOperation.m in Sources */,
