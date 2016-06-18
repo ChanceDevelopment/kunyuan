@@ -50,10 +50,12 @@
 - (void)initView
 {
     [super initView];
+    
     [mainTable initView];
     [mainTable initHeaderView];
     [mainTable  setHeaderViewWithDataSource:nil];
     mainTable.serviceDelegate = self;
+    [Tool setExtraCellLineHidden:mainTable];
 }
 
 - (void)loadBanner
