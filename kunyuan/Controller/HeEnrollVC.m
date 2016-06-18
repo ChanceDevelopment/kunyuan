@@ -1,28 +1,29 @@
 //
-//  HeLoginVC.m
+//  HeEnrollVC.m
 //  kunyuan
 //
-//  Created by Tony on 16/6/16.
+//  Created by HeDongMing on 16/6/16.
 //  Copyright © 2016年 HeDongMing. All rights reserved.
 //
 
-#import "HeLoginVC.h"
 #import "HeEnrollVC.h"
 #import "UIButton+Bootstrap.h"
-#import "HeFindPasswordVC.h"
 
-@interface HeLoginVC ()<UITextFieldDelegate>
-@property(strong,nonatomic)IBOutlet UITextField *accountField;
+@interface HeEnrollVC ()<UITextFieldDelegate>
+@property(strong,nonatomic)IBOutlet UITextField *acountField;
 @property(strong,nonatomic)IBOutlet UITextField *passwordField;
-@property(strong,nonatomic)IBOutlet UIButton *loginButton;
-
+@property(strong,nonatomic)IBOutlet UITextField *verifyField;
+@property(strong,nonatomic)IBOutlet UIButton *getCodeButton;
+@property(strong,nonatomic)IBOutlet UIButton *commitButton;
 
 @end
 
-@implementation HeLoginVC
-@synthesize accountField;
+@implementation HeEnrollVC
+@synthesize acountField;
 @synthesize passwordField;
-@synthesize loginButton;
+@synthesize verifyField;
+@synthesize getCodeButton;
+@synthesize commitButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,9 +36,9 @@
         label.textColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
         self.navigationItem.titleView = label;
-        label.text = @"坤元外卖";
+        label.text = @"注册";
         [label sizeToFit];
-        self.title = @"登录";
+        self.title = @"注册";
     }
     return self;
 }
@@ -57,46 +58,27 @@
 - (void)initView
 {
     [super initView];
-    UIBarButtonItem *enrollItem = [[UIBarButtonItem alloc] init];
-    enrollItem.title = @"注册";
-    enrollItem.tintColor = [UIColor whiteColor];
-    enrollItem.target = self;
-    enrollItem.action = @selector(enrollMethod:);
-    self.navigationItem.rightBarButtonItem = enrollItem;
     
-    [loginButton dangerStyle];
-    loginButton.layer.borderWidth = 0;
-    loginButton.layer.borderColor = [UIColor clearColor].CGColor;
-    [loginButton setBackgroundImage:[Tool buttonImageFromColor:APPDEFAULTORANGE withImageSize:loginButton.frame.size] forState:UIControlStateNormal];
+    [getCodeButton dangerStyle];
+    getCodeButton.layer.borderWidth = 0;
+    getCodeButton.layer.borderColor = [UIColor clearColor].CGColor;
+    [getCodeButton setBackgroundImage:[Tool buttonImageFromColor:APPDEFAULTORANGE withImageSize:getCodeButton.frame.size] forState:UIControlStateNormal];
+    [getCodeButton.titleLabel setFont:[UIFont systemFontOfSize:13.0]];
+    
+    [commitButton dangerStyle];
+    commitButton.layer.borderWidth = 0;
+    commitButton.layer.borderColor = [UIColor clearColor].CGColor;
+    [commitButton setBackgroundImage:[Tool buttonImageFromColor:APPDEFAULTORANGE withImageSize:commitButton.frame.size] forState:UIControlStateNormal];
 }
 
-- (void)enrollMethod:(id)sender
+- (IBAction)getCodeButtonClick:(id)sender
 {
-    HeEnrollVC *enrollVC = [[HeEnrollVC alloc] init];
-    enrollVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:enrollVC animated:YES];
+    
 }
 
-- (IBAction)loginMethod:(id)sender
+- (IBAction)commitButtonClick:(id)sender
 {
-
-}
-
-- (IBAction)findPassword:(id)sender
-{
-    HeFindPasswordVC *findPasswordVC = [[HeFindPasswordVC alloc] init];
-    findPasswordVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:findPasswordVC animated:YES];
-}
-
-- (IBAction)quickLogin:(id)sender
-{
-
-}
-
-- (IBAction)thirdPartyLogin:(UIButton *)sender
-{
-
+    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
