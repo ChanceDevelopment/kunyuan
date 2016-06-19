@@ -71,7 +71,7 @@
     //显示顺序和数组顺序一致
     //设置图片url数组,和滚动视图位置
     
-    CGFloat picViewHeight = 120;
+    CGFloat picViewHeight = 150;
     DCPicScrollView  *picView = [DCPicScrollView picScrollViewWithFrame:CGRectMake(0, 0, SCREENWIDTH, picViewHeight) WithImageUrls:UrlStringArray];
     
     //显示顺序和数组顺序一致
@@ -127,14 +127,14 @@
                                 @"title_logo2.jpg"];
     
     
-    NSArray *titleArray = @[@"title_logo1.jpg",
-                            @"title_logo2.jpg"];;
+    NSArray *titleArray = @[@"   title_logo1",
+                            @"   title_logo2"];;
     
     
     //显示顺序和数组顺序一致
     //设置图片url数组,和滚动视图位置
     
-    CGFloat picViewHeight = 120;
+    CGFloat picViewHeight = 150;
     DCPicScrollView  *picView = [DCPicScrollView picScrollViewWithFrame:CGRectMake(0, 0, SCREENWIDTH, picViewHeight) WithImageUrls:UrlStringArray];
     picView.tag = SCROLLTAG;
     //显示顺序和数组顺序一致

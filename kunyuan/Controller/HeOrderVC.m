@@ -53,6 +53,7 @@
 - (void)initView
 {
     [super initView];
+    [Tool setExtraCellLineHidden:orderTable];
 }
 
 #pragma mark - Table view data source

@@ -609,6 +609,7 @@
 		EA5034E11D0BB1A600F15720 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5034E01D0BB1A600F15720 /* OpenGLES.framework */; };
 		EA5034E31D0BB1B100F15720 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5034E21D0BB1B100F15720 /* SystemConfiguration.framework */; };
 		EA5034E51D0BB1B900F15720 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5034E41D0BB1B900F15720 /* Contacts.framework */; };
+		EA890B041D16832E0018773C /* logPlaceholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EA890B031D16832E0018773C /* logPlaceholderImage.png */; };
 		EAF785B21CFC87F600820CE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B11CFC87F600820CE0 /* main.m */; };
 		EAF785B51CFC87F600820CE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B41CFC87F600820CE0 /* AppDelegate.m */; };
 		EAF785B81CFC87F600820CE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785B71CFC87F600820CE0 /* ViewController.m */; };
@@ -1738,6 +1739,7 @@
 		EA5034E01D0BB1A600F15720 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		EA5034E21D0BB1B100F15720 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA5034E41D0BB1B900F15720 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		EA890B031D16832E0018773C /* logPlaceholderImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logPlaceholderImage.png; sourceTree = "<group>"; };
 		EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "坤元外卖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF785B11CFC87F600820CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAF785B31CFC87F600820CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1939,6 +1941,7 @@
 		EA06635E1D13695500B45359 /* DemoImage */ = {
 			isa = PBXGroup;
 			children = (
+				EA890B031D16832E0018773C /* logPlaceholderImage.png */,
 				EA06635F1D13695F00B45359 /* title_logo1.jpg */,
 				EA0663601D13695F00B45359 /* title_logo2.jpg */,
 			);
@@ -4281,6 +4284,7 @@
 				EA0663511D13041700B45359 /* icon_home_food.png in Resources */,
 				EA4FED961D0CFEC000533239 /* AlbumComment@3x.png in Resources */,
 				EA4FE74A1D0CF62800533239 /* loading_anim2.png in Resources */,
+				EA890B041D16832E0018773C /* logPlaceholderImage.png in Resources */,
 				EA4FECC91D0CFAC400533239 /* arrow_down1.png in Resources */,
 				EA06635D1D13689A00B45359 /* comonDefaultImage.png in Resources */,
 				EA0662F71D12E4A400B45359 /* icon-weibo.png in Resources */,
