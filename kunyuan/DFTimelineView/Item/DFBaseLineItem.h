@@ -16,6 +16,7 @@ typedef NS_ENUM(NSUInteger, LineItemType){
     LineItemTypeUserActivity,   //个人用户活动类
     LineItemTypeUserActivityDetail,   //个人用户活动详细类
     LineItemTypeUserNewsActivityDetail,   //个人用户信息活动详细类
+    LineItemTypeCommunity,//社区
 };
 
 

@@ -61,7 +61,7 @@
 - (void)loadBanner
 {
     NSMutableArray *bannerDataSource = nil;
-    [mainTable initHeaderViewWithArray:bannerDataSource];
+//    [mainTable initHeaderViewWithArray:bannerDataSource];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

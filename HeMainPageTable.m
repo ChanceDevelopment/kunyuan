@@ -13,7 +13,7 @@
 #import "HeMainPageSecondCell.h"
 #import "HeMainPageThirdCell.h"
 
-#define HEADVIEWHEIGH 280
+#define HEADVIEWHEIGH 150
 #define SCROLLTAG 300
 
 @implementation HeMainPageTable
@@ -128,7 +128,7 @@
     
     
     NSArray *titleArray = @[@"   title_logo1",
-                            @"   title_logo2"];;
+                            @"   title_logo2"];
     
     
     //显示顺序和数组顺序一致
@@ -170,6 +170,7 @@
     
     [headView addSubview:picView];
     
+    return;
     //下载失败重复下载次数,默认不重复,
     [[DCWebImageManager shareManager] setDownloadImageRepeatCount:1];
     

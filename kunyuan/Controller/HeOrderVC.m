@@ -53,6 +53,8 @@
 - (void)initView
 {
     [super initView];
+    orderTable.backgroundView = nil;
+    orderTable.backgroundColor = [UIColor colorWithWhite:240.0 / 255.0 alpha:1.0];
     [Tool setExtraCellLineHidden:orderTable];
 }
 
@@ -60,13 +62,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return [self.dataArray count];
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [(NSArray *)[self.dataArray objectAtIndex:section] count];
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -84,7 +86,7 @@
     if (cell == nil) {
         cell = [[HeOrderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier cellSize:cellsize];
     }
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
     
@@ -92,40 +94,9 @@
 
 #pragma mark - Table view delegate
 
-//- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
-//{
-//    return self.sectionTitles;
-//}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    if (section == 0)
-    {
-        return 0;
-    }
-    else{
-        return 22;
-    }
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    if (section == 0)
-    {
-        return nil;
-    }
-    
-    UIView *contentView = [[UIView alloc] init];
-    [contentView setBackgroundColor:[UIColor colorWithRed:0.88 green:0.88 blue:0.88 alpha:1.0]];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 100, 22)];
-    label.backgroundColor = [UIColor clearColor];
-    [contentView addSubview:label];
-    return contentView;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 150.0;
+    return 180.0;
 }
 
 - (void)didReceiveMemoryWarning {

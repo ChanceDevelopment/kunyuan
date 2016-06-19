@@ -6,7 +6,7 @@
 //  Copyright © 2015年 name. All rights reserved.
 //
 
-#define myWidth self.frame.size.width
+#define myWidth ([UIScreen mainScreen].bounds.size.width)
 #define myHeight self.frame.size.height
 #define pageSize (myHeight * 0.2 > 25 ? 25 : myHeight * 0.2)
 
@@ -98,12 +98,15 @@
 - (void)prepareImageView {
     
     UIImageView *left = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0,myWidth, myHeight)];
+    left.layer.masksToBounds = YES;
     left.contentMode = UIViewContentModeScaleAspectFill;
     
     UIImageView *center = [[UIImageView alloc] initWithFrame:CGRectMake(myWidth, 0,myWidth, myHeight)];
+    center.layer.masksToBounds = YES;
     center.contentMode = UIViewContentModeScaleAspectFill;
     
     UIImageView *right = [[UIImageView alloc] initWithFrame:CGRectMake(myWidth * 2, 0,myWidth, myHeight)];
+    right.layer.masksToBounds = YES;
     right.contentMode = UIViewContentModeScaleAspectFill;
     
     center.userInteractionEnabled = YES;

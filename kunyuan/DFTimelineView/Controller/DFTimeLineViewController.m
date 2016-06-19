@@ -19,6 +19,7 @@
 #import "DFUserActivityLineCellAdapter.h"
 #import "DFUserActivityDetailLineCellAdapter.h"
 #import "DFUserNewsActivityDetailLineCellAdapter.h"
+#import "DFCommunityAdapter.h"
 
 #import "CommentInputView.h"
 #import "HeCommentInputView.h"
@@ -73,6 +74,9 @@
         
         DFUserNewsActivityDetailLineCellAdapter *userNewsActivityDetailLineCellAdapter =[[DFUserNewsActivityDetailLineCellAdapter alloc] init];
         
+        
+        DFCommunityAdapter *communityAdapter = [[DFCommunityAdapter alloc] init];
+        
         [manager registerAdapter:LineItemTypeTextImage adapter:textImageCellAdapter];
         [manager registerAdapter:LineItemTypeActivity adapter:activityCellAdapter];
         [manager registerAdapter:LineItemTypeActivityDetail adapter:activityDetailCellAdapter];
@@ -80,6 +84,7 @@
         [manager registerAdapter:LineItemTypeUserActivity adapter:useractivityCellAdapter];
         [manager registerAdapter:LineItemTypeUserActivityDetail adapter:useractivityDetailCellAdapter];
         [manager registerAdapter:LineItemTypeUserNewsActivityDetail adapter:userNewsActivityDetailLineCellAdapter];
+        [manager registerAdapter:LineItemTypeCommunity adapter:communityAdapter];
         
     }
     return self;

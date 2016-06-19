@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeUserVC">
             <connections>
+                <outlet property="userTable" destination="qwj-Sl-94B" id="Jdq-dB-Olo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +15,45 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qwj-Sl-94B">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Lm5-tM-v8c"/>
+                        <outlet property="delegate" destination="-1" id="ep0-B7-faK"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qwj-Sl-94B" secondAttribute="trailing" id="HH5-5w-Nzz"/>
+                <constraint firstItem="qwj-Sl-94B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O8N-wO-6ok"/>
+                <constraint firstItem="qwj-Sl-94B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZvN-FG-6yF"/>
+                <constraint firstAttribute="bottom" secondItem="qwj-Sl-94B" secondAttribute="bottom" id="mcj-l2-Cwu"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="qwj-Sl-94B"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="HH5-5w-Nzz"/>
+                    <exclude reference="O8N-wO-6ok"/>
+                    <exclude reference="ZvN-FG-6yF"/>
+                    <exclude reference="mcj-l2-Cwu"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="qwj-Sl-94B"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="HH5-5w-Nzz"/>
+                    <include reference="O8N-wO-6ok"/>
+                    <include reference="ZvN-FG-6yF"/>
+                    <include reference="mcj-l2-Cwu"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
