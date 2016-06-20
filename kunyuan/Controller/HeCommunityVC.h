@@ -7,7 +7,8 @@
 //
 
 #import "HeBaseViewController.h"
+#import "DFTimeLineViewController.h"
 
-@interface HeCommunityVC : HeBaseViewController
+@interface HeCommunityVC : DFTimeLineViewController
 
 @end

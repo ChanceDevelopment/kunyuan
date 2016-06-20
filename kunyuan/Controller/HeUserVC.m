@@ -8,6 +8,9 @@
 
 #import "HeUserVC.h"
 #import "HeBaseTableViewCell.h"
+#import "HeSettingVC.h"
+#import "HeNewsVC.h"
+#import "HeUserInfoVC.h"
 
 #define COMMENTBUTTONTAG 100
 #define COLLECTBUTTONTAG 200
@@ -83,8 +86,14 @@
     userImage.layer.cornerRadius = imageW / 2.0;
     userImage.layer.masksToBounds = YES;
     userImage.layer.borderWidth = 2.0;
+    userImage.userInteractionEnabled = YES;
     userImage.layer.borderColor = [UIColor whiteColor].CGColor;
     [headerView addSubview:userImage];
+    
+    UITapGestureRecognizer *scanUserInfoTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(scanUserInfo:)];
+    scanUserInfoTap.numberOfTapsRequired = 1;
+    scanUserInfoTap.numberOfTouchesRequired = 1;
+    [userImage addGestureRecognizer:scanUserInfoTap];
     
     userLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, imageY + imageH + 5, SCREENWIDTH, 30)];
     userLabel.text = @"test";
@@ -114,6 +123,53 @@
     [commentBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     [collectBtn addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
     
+    CGFloat itembuttonW = 30;
+    CGFloat itembuttonH = 30;
+    UIButton *notifyButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, itembuttonW, itembuttonH)];
+    [notifyButton setBackgroundImage:[UIImage imageNamed:@"user_notify_icon"] forState:UIControlStateNormal];
+    [notifyButton addTarget:self action:@selector(barButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    notifyButton.tag = 1;
+    
+    UIButton *settingButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, itembuttonW, itembuttonH)];
+    [settingButton setBackgroundImage:[UIImage imageNamed:@"user_setting_icon"] forState:UIControlStateNormal];
+    [settingButton addTarget:self action:@selector(barButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    settingButton.tag = 2;
+    
+    
+    UIBarButtonItem *notifyItem = [[UIBarButtonItem alloc] initWithCustomView:notifyButton];
+    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:settingButton];
+    
+    NSArray *itemArray = @[notifyItem,settingItem];
+    self.navigationItem.rightBarButtonItems = itemArray;
+}
+
+- (void)scanUserInfo:(UITapGestureRecognizer *)tap
+{
+    HeUserInfoVC *userInfoVC = [[HeUserInfoVC alloc] init];
+    userInfoVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:userInfoVC animated:YES];
+}
+
+- (void)barButtonItemClick:(UIButton *)sender
+{
+    switch (sender.tag) {
+        case 1:
+        {
+            HeNewsVC *newsVC = [[HeNewsVC alloc] init];
+            newsVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:newsVC animated:YES];
+            break;
+        }
+        case 2:
+        {
+            HeSettingVC *settingVC = [[HeSettingVC alloc] init];
+            settingVC.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:settingVC animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 - (void)buttonClick:(UIButton *)button

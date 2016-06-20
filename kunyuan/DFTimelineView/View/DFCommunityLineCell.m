@@ -36,6 +36,7 @@
 
 @interface DFCommunityLineCell()
 
+
 @property (strong, nonatomic) MLLinkLabel *nameLabel;
 @property (strong, nonatomic) MLLinkLabel *textContentLabel;
 @property (strong, nonatomic) MLLinkLabel *subtextContentLabel;
@@ -59,25 +60,25 @@
 
 -(void) initCell
 {
-    if (_nameLabel == nil) {
-        
-        _nameLabel =[[MLLinkLabel alloc] initWithFrame:CGRectZero];
-        _nameLabel.font = ContactFont;
-        _nameLabel.numberOfLines = 1;
-        _nameLabel.adjustsFontSizeToFitWidth = NO;
-        _nameLabel.textInsets = UIEdgeInsetsZero;
-        
-        _nameLabel.dataDetectorTypes = MLDataDetectorTypePhoneNumber;
-        _nameLabel.dataDetectorTypesOfAttributedLinkValue = MLLinkTypeOther;
-        
-        _nameLabel.allowLineBreakInsideLinks = NO;
-        _nameLabel.linkTextAttributes = nil;
-        _nameLabel.activeLinkTextAttributes = nil;
-        _nameLabel.lineHeightMultiple = TextLineHeight;
-        _nameLabel.linkTextAttributes = @{NSForegroundColorAttributeName: HighLightTextColor};
-        
-        [self.bodyView addSubview:_subtextContentLabel];
-    }
+//    if (_nameLabel == nil) {
+//        
+//        _nameLabel =[[MLLinkLabel alloc] initWithFrame:CGRectZero];
+//        _nameLabel.font = ContactFont;
+//        _nameLabel.numberOfLines = 1;
+//        _nameLabel.adjustsFontSizeToFitWidth = NO;
+//        _nameLabel.textInsets = UIEdgeInsetsZero;
+//        
+//        _nameLabel.dataDetectorTypes = MLDataDetectorTypePhoneNumber;
+//        _nameLabel.dataDetectorTypesOfAttributedLinkValue = MLLinkTypeOther;
+//        
+//        _nameLabel.allowLineBreakInsideLinks = NO;
+//        _nameLabel.linkTextAttributes = nil;
+//        _nameLabel.activeLinkTextAttributes = nil;
+//        _nameLabel.lineHeightMultiple = TextLineHeight;
+//        _nameLabel.linkTextAttributes = @{NSForegroundColorAttributeName: HighLightTextColor};
+//        
+//        [self.bodyView addSubview:_subtextContentLabel];
+//    }
     
     if (_subtextContentLabel == nil) {
         
@@ -143,13 +144,13 @@
     
     NSLog(@"%@",item.likesStr);
     
-    //naem的size
-    CGSize nameSize = [MLLinkLabel getViewSize:item.nameattrText maxWidth:BodyMaxWidth font:TextFont lineHeight:TextLineHeight lines:0];
-    
-    _nameLabel.attributedText = item.nameattrText;
-    [_nameLabel sizeToFit];
-    
-    _nameLabel.frame = CGRectMake(0, 0, BodyMaxWidth, nameSize.height);
+//    //naem的size
+//    CGSize nameSize = [MLLinkLabel getViewSize:item.nameattrText maxWidth:BodyMaxWidth font:TextFont lineHeight:TextLineHeight lines:0];
+//    
+//    _nameLabel.attributedText = item.nameattrText;
+//    [_nameLabel sizeToFit];
+//    
+//    _nameLabel.frame = CGRectMake(0, 0, BodyMaxWidth, nameSize.height);
     
     //活动副标题的size
     CGSize subtextSize = [MLLinkLabel getViewSize:item.subattrText maxWidth:BodyMaxWidth font:TextFont lineHeight:TextLineHeight lines:0];
@@ -157,7 +158,7 @@
     _subtextContentLabel.attributedText = item.subattrText;
     [_subtextContentLabel sizeToFit];
     
-    _subtextContentLabel.frame = CGRectMake(0, CGRectGetMaxY(_nameLabel.frame), BodyMaxWidth, subtextSize.height);
+    _subtextContentLabel.frame = CGRectMake(0, 0, BodyMaxWidth, subtextSize.height);
     
     //活动标题的size
     CGSize textSize = [MLLinkLabel getViewSize:item.attrText maxWidth:BodyMaxWidth font:TextFont lineHeight:TextLineHeight lines:0];
@@ -189,21 +190,25 @@
     
     [_gridImageView updateWithImages:item.thumbImages srcImages:item.srcImages oneImageWidth:item.width oneImageHeight:item.height];
     
-    [self updateBodyView:(nameSize.height + subtextSize.height + textSize.height + gridHeight + TextImageSpace)];
+    [self updateBodyView:(subtextSize.height + textSize.height + gridHeight + TextImageSpace)];
     
 }
 
 
 +(CGFloat)getCellHeight:(DFCommunityLineItem *)item
 {
-    //活动图标的size
-    NSAttributedString *nameText = item.nameattrText;
-    CGSize nameSize = [MLLinkLabel getViewSize:nameText maxWidth:BodyMaxWidth font:ActivityIconFont lineHeight:TextLineHeight lines:0];
+//    //活动名字的size
+//    NSAttributedString *nameText = item.nameattrText;
+//    if (item.nameattrText == nil) {
+//        item.nameattrText  = [item.nametext expressionAttributedStringWithExpression:[[DFFaceManager sharedInstance] sharedMLExpression]];
+//    }
+//    
+//    CGSize nameSize = [MLLinkLabel getViewSize:nameText maxWidth:BodyMaxWidth font:ActivityIconFont lineHeight:TextLineHeight lines:0];
     
     
     //副活动标题的size
     if (item.subattrText == nil) {
-        item.subattrText  = [item.text expressionAttributedStringWithExpression:[[DFFaceManager sharedInstance] sharedMLExpression]];
+        item.subattrText  = [item.subtext expressionAttributedStringWithExpression:[[DFFaceManager sharedInstance] sharedMLExpression]];
     }
     
     CGSize subtextSize = [MLLinkLabel getViewSize:item.subattrText maxWidth:BodyMaxWidth font:TextFont lineHeight:TextLineHeight lines:0];
@@ -221,7 +226,7 @@
     //图片区域的高度
     CGFloat gridHeight = [DFGridImageView getHeight:item.thumbImages maxWidth:GridMaxWidth oneImageWidth:item.width oneImageHeight:item.height];
     
-    return height +nameSize.height + textSize.height + subtextSize.height +  gridHeight + TextImageSpace;
+    return height  + textSize.height + subtextSize.height +  gridHeight + TextImageSpace;
 }
 
 /*

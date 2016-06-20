@@ -1,22 +1,22 @@
 //
-//  HeOrderVC.m
+//  HeNewsVC.m
 //  kunyuan
 //
-//  Created by HeDongMing on 16/6/16.
+//  Created by Tony on 16/6/20.
 //  Copyright © 2016年 HeDongMing. All rights reserved.
 //
 
-#import "HeOrderVC.h"
-#import "HeOrderCell.h"
+#import "HeNewsVC.h"
+#import "HeNotifyCell.h"
 
-@interface HeOrderVC ()<UITableViewDataSource,UITableViewDelegate>
-@property(strong,nonatomic)IBOutlet UITableView *orderTable;
+@interface HeNewsVC ()
+@property(strong,nonatomic)IBOutlet UITableView *newsTable;
 @property(strong,nonatomic)NSMutableArray *dataArray;
 
 @end
 
-@implementation HeOrderVC
-@synthesize orderTable;
+@implementation HeNewsVC
+@synthesize newsTable;
 @synthesize dataArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,9 +30,9 @@
         label.textColor = [UIColor whiteColor];
         label.textAlignment = NSTextAlignmentCenter;
         self.navigationItem.titleView = label;
-        label.text = @"当前订单";
+        label.text = @"消息中心";
         [label sizeToFit];
-        self.title = @"订单";
+        self.title = @"消息中心";
     }
     return self;
 }
@@ -47,15 +47,12 @@
 - (void)initializaiton
 {
     [super initializaiton];
-    dataArray = [[NSMutableArray alloc] initWithCapacity:0];
 }
 
 - (void)initView
 {
     [super initView];
-    orderTable.backgroundView = nil;
-    orderTable.backgroundColor = [UIColor colorWithWhite:240.0 / 255.0 alpha:1.0];
-    [Tool setExtraCellLineHidden:orderTable];
+    [Tool setExtraCellLineHidden:newsTable];
 }
 
 #pragma mark - Table view data source
@@ -73,20 +70,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"OrderTableViewCell";
+    static NSString *CellIdentifier = @"HeNotifyCell";
     NSInteger row = indexPath.row;
     NSInteger section = indexPath.section;
     CGSize cellsize = [tableView rectForRowAtIndexPath:indexPath].size;
     
-    HeOrderCell *cell = (HeOrderCell *)[tableView cellForRowAtIndexPath:indexPath];
-    
-    
+    HeNotifyCell *cell = (HeNotifyCell *)[tableView cellForRowAtIndexPath:indexPath];
     
     // Configure the cell...
     if (cell == nil) {
-        cell = [[HeOrderCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier cellSize:cellsize];
+        cell = [[HeNotifyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier cellSize:cellsize];
     }
-//    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:15.0];
+    cell.textLabel.textColor = [UIColor blackColor];
+    
+    
     
     return cell;
     
@@ -96,7 +96,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 180.0;
+    return 80.0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

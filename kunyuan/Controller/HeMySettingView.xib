@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeMySettingView">
+            <connections>
+                <outlet property="settingtable" destination="sta-ix-iUW" id="riW-qP-Bzb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="sta-ix-iUW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="i5M-Pr-FkT" id="gq1-d5-AIs"/>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="rRk-4E-xbh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sta-ix-iUW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BnU-IZ-tUR"/>
+                <constraint firstAttribute="bottom" secondItem="sta-ix-iUW" secondAttribute="bottom" id="Obs-2c-uLq"/>
+                <constraint firstAttribute="trailing" secondItem="sta-ix-iUW" secondAttribute="trailing" id="f6G-lk-iHq"/>
+                <constraint firstItem="sta-ix-iUW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x42-Lp-mac"/>
+            </constraints>
+            <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BnU-IZ-tUR"/>
+                    <exclude reference="Obs-2c-uLq"/>
+                    <exclude reference="f6G-lk-iHq"/>
+                    <exclude reference="x42-Lp-mac"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="BnU-IZ-tUR"/>
+                    <include reference="Obs-2c-uLq"/>
+                    <include reference="f6G-lk-iHq"/>
+                    <include reference="x42-Lp-mac"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="418" y="347"/>
+        </view>
+    </objects>
+</document>
