@@ -4627,6 +4627,7 @@
 				TargetAttributes = {
 					EAF785AC1CFC87F600820CE0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2HE3DDFLNU;
 					};
 					EAF785C51CFC87F600820CE0 = {
 						CreatedOnToolsVersion = 7.3.1;
