@@ -5468,8 +5468,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Chance Network Technology Co.,Ltd (E6CUH72B23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Chance Network Technology Co.,Ltd (E6CUH72B23)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5492,9 +5492,9 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chance.kunyuan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
 				PRODUCT_NAME = "坤元外卖";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5ae30ce6-32fc-41b0-9d89-cb288ff846e6";
 			};
 			name = Distribution;
 		};
@@ -5633,9 +5633,9 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chance.kunyuan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
 				PRODUCT_NAME = "坤元外卖";
-				PROVISIONING_PROFILE = "385205c6-933d-4459-97b0-d9a870353409";
+				PROVISIONING_PROFILE = "32c9a25b-a25f-415e-a6b9-bac9ab10c689";
 			};
 			name = Debug;
 		};
@@ -5643,8 +5643,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Chance Network Technology Co.,Ltd (E6CUH72B23)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Chance Network Technology Co.,Ltd (E6CUH72B23)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5667,9 +5667,9 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chance.kunyuan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
 				PRODUCT_NAME = "坤元外卖";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "9837e496-d77c-4bf6-bb5c-3a2dd78f9a50";
 			};
 			name = Release;
 		};
