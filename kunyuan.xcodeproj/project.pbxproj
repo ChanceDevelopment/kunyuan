@@ -1973,7 +1973,7 @@
 		EA890C0F1D17DA6A0018773C /* HeNotifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeNotifyCell.m; sourceTree = SOURCE_ROOT; };
 		EA890C111D17EFB80018773C /* user_collect_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_collect_icon@2x.png"; sourceTree = "<group>"; };
 		EA890C121D17EFB80018773C /* user_comment_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_comment_icon@2x.png"; sourceTree = "<group>"; };
-		EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "坤元外卖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF785AD1CFC87F600820CE0 /* 猪美巴外卖.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "猪美巴外卖.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF785B11CFC87F600820CE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAF785B31CFC87F600820CE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EAF785B41CFC87F600820CE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -4497,7 +4497,7 @@
 		EAF785AE1CFC87F600820CE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */,
+				EAF785AD1CFC87F600820CE0 /* 猪美巴外卖.app */,
 				EAF785C61CFC87F600820CE0 /* kunyuanTests.xctest */,
 				EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */,
 			);
@@ -4577,7 +4577,7 @@
 			);
 			name = kunyuan;
 			productName = kunyuan;
-			productReference = EAF785AD1CFC87F600820CE0 /* 坤元外卖.app */;
+			productReference = EAF785AD1CFC87F600820CE0 /* 猪美巴外卖.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EAF785C51CFC87F600820CE0 /* kunyuanTests */ = {
@@ -5493,7 +5493,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
-				PRODUCT_NAME = "坤元外卖";
+				PRODUCT_NAME = "猪美巴外卖";
 				PROVISIONING_PROFILE = "5ae30ce6-32fc-41b0-9d89-cb288ff846e6";
 			};
 			name = Distribution;
@@ -5634,7 +5634,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
-				PRODUCT_NAME = "坤元外卖";
+				PRODUCT_NAME = "猪美巴外卖";
 				PROVISIONING_PROFILE = "32c9a25b-a25f-415e-a6b9-bac9ab10c689";
 			};
 			name = Debug;
@@ -5668,7 +5668,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
-				PRODUCT_NAME = "坤元外卖";
+				PRODUCT_NAME = "猪美巴外卖";
 				PROVISIONING_PROFILE = "9837e496-d77c-4bf6-bb5c-3a2dd78f9a50";
 			};
 			name = Release;
