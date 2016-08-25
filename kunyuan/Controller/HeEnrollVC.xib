@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -150,20 +150,20 @@
                     <exclude reference="HJY-vo-68B"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="n3p-ww-HII"/>
-                    <exclude reference="g0s-Bf-4ti"/>
-                    <exclude reference="u9A-21-lT8"/>
+                    <exclude reference="5pc-1D-jLt"/>
+                    <exclude reference="7e8-Us-XD9"/>
+                    <exclude reference="z6m-9j-DKF"/>
                     <exclude reference="RWC-OD-pJg"/>
                     <exclude reference="SZh-5o-f2f"/>
-                    <exclude reference="5pc-1D-jLt"/>
-                    <exclude reference="z6m-9j-DKF"/>
-                    <exclude reference="7e8-Us-XD9"/>
+                    <exclude reference="g0s-Bf-4ti"/>
+                    <exclude reference="n3p-ww-HII"/>
+                    <exclude reference="u9A-21-lT8"/>
+                    <exclude reference="EHF-88-MKJ"/>
+                    <exclude reference="dCl-ne-Ob5"/>
+                    <exclude reference="rSV-Vq-86a"/>
                     <exclude reference="A5Q-s0-2Ie"/>
                     <exclude reference="Y2D-Am-PMU"/>
                     <exclude reference="c9h-Gj-KdE"/>
-                    <exclude reference="rSV-Vq-86a"/>
-                    <exclude reference="EHF-88-MKJ"/>
-                    <exclude reference="dCl-ne-Ob5"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -175,20 +175,20 @@
                     <include reference="HJY-vo-68B"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="n3p-ww-HII"/>
-                    <include reference="g0s-Bf-4ti"/>
-                    <include reference="u9A-21-lT8"/>
+                    <include reference="5pc-1D-jLt"/>
+                    <include reference="7e8-Us-XD9"/>
+                    <include reference="z6m-9j-DKF"/>
                     <include reference="RWC-OD-pJg"/>
                     <include reference="SZh-5o-f2f"/>
-                    <include reference="5pc-1D-jLt"/>
-                    <include reference="z6m-9j-DKF"/>
-                    <include reference="7e8-Us-XD9"/>
+                    <include reference="g0s-Bf-4ti"/>
+                    <include reference="n3p-ww-HII"/>
+                    <include reference="u9A-21-lT8"/>
+                    <include reference="EHF-88-MKJ"/>
+                    <include reference="dCl-ne-Ob5"/>
+                    <include reference="rSV-Vq-86a"/>
                     <include reference="A5Q-s0-2Ie"/>
                     <include reference="Y2D-Am-PMU"/>
                     <include reference="c9h-Gj-KdE"/>
-                    <include reference="rSV-Vq-86a"/>
-                    <include reference="EHF-88-MKJ"/>
-                    <include reference="dCl-ne-Ob5"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="703" y="294"/>
