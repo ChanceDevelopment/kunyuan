@@ -24,6 +24,7 @@
 @interface AppDelegate ()
 
 @end
+BMKMapManager* _mapManager;
 
 @implementation AppDelegate
 @synthesize queue;
@@ -34,6 +35,7 @@
     [self initialization];
     [self initShareSDK];
     [self umengTrack];
+    [self launchBaiduMap];
     [self initAPServiceWithOptions:launchOptions];
     BOOL showGuide = [self isShowIntroduce];
     showGuide = NO;
@@ -60,6 +62,40 @@
     [self loginStateChange:nil];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)launchBaiduMap
+{
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:BAIDUMAPKEY generalDelegate:self];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    else{
+        NSLog(@"manager start success!");
+    }
+}
+
+- (void)onGetNetworkState:(int)iError
+{
+    if (0 == iError) {
+        NSLog(@"联网成功");
+    }
+    else{
+        NSLog(@"onGetNetworkState %d",iError);
+    }
+    
+}
+
+- (void)onGetPermissionState:(int)iError
+{
+    if (0 == iError) {
+        NSLog(@"授权成功");
+    }
+    else {
+        NSLog(@"onGetPermissionState %d",iError);
+    }
 }
 
 - (void)setUpRootVC

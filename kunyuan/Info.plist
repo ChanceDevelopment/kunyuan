@@ -70,5 +70,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>猪美巴外卖获取您的位置，提高您的使用体验</string>
+	<key>NSLocationWhenInUseDescription</key>
+	<string>猪美巴外卖获取您的位置，提高您的使用体验</string>
+	<key>CFBundleDisplayName</key>
+	<string>猪美巴外卖</string>
 </dict>
 </plist>
