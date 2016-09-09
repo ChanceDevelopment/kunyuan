@@ -720,6 +720,17 @@
 		EA890C101D17DA6A0018773C /* HeNotifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA890C0F1D17DA6A0018773C /* HeNotifyCell.m */; };
 		EA890C131D17EFB80018773C /* user_collect_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA890C111D17EFB80018773C /* user_collect_icon@2x.png */; };
 		EA890C141D17EFB80018773C /* user_comment_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA890C121D17EFB80018773C /* user_comment_icon@2x.png */; };
+		EAC709C21D829CF700A5F969 /* menu_add.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709C11D829CF700A5F969 /* menu_add.png */; };
+		EAC709C61D829E1200A5F969 /* HeDistributeMoodVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC709C41D829E1200A5F969 /* HeDistributeMoodVC.m */; };
+		EAC709C71D829E1200A5F969 /* HeDistributeMoodVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC709C51D829E1200A5F969 /* HeDistributeMoodVC.xib */; };
+		EAC709CC1D82A3AA00A5F969 /* home_can_change_bg_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709C81D82A3AA00A5F969 /* home_can_change_bg_01.png */; };
+		EAC709CD1D82A3AA00A5F969 /* home_can_change_bg_02.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709C91D82A3AA00A5F969 /* home_can_change_bg_02.png */; };
+		EAC709CE1D82A3AA00A5F969 /* home_can_change_bg_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709CA1D82A3AA00A5F969 /* home_can_change_bg_03.png */; };
+		EAC709CF1D82A3AA00A5F969 /* home_can_change_bg_04.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709CB1D82A3AA00A5F969 /* home_can_change_bg_04.png */; };
+		EAC709D11D82A58800A5F969 /* icon_home_magnifier_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709D01D82A58800A5F969 /* icon_home_magnifier_green.png */; };
+		EAC709D31D82A5A300A5F969 /* menu_add_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709D21D82A5A300A5F969 /* menu_add_green.png */; };
+		EAC709D81D82A61000A5F969 /* HeSearchInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */; };
+		EAC709D91D82A61000A5F969 /* HeSearchInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */; };
 		EAD46F3E1D80738800196D46 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F351D80738800196D46 /* BaiduMapAPI_Base.framework */; };
 		EAD46F3F1D80738900196D46 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F361D80738800196D46 /* BaiduMapAPI_Cloud.framework */; };
 		EAD46F401D80738900196D46 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F371D80738800196D46 /* BaiduMapAPI_Location.framework */; };
@@ -1981,6 +1992,19 @@
 		EA890C0F1D17DA6A0018773C /* HeNotifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeNotifyCell.m; sourceTree = SOURCE_ROOT; };
 		EA890C111D17EFB80018773C /* user_collect_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_collect_icon@2x.png"; sourceTree = "<group>"; };
 		EA890C121D17EFB80018773C /* user_comment_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user_comment_icon@2x.png"; sourceTree = "<group>"; };
+		EAC709C11D829CF700A5F969 /* menu_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_add.png; sourceTree = "<group>"; };
+		EAC709C31D829E1200A5F969 /* HeDistributeMoodVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeDistributeMoodVC.h; sourceTree = "<group>"; };
+		EAC709C41D829E1200A5F969 /* HeDistributeMoodVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeDistributeMoodVC.m; sourceTree = "<group>"; };
+		EAC709C51D829E1200A5F969 /* HeDistributeMoodVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeDistributeMoodVC.xib; sourceTree = "<group>"; };
+		EAC709C81D82A3AA00A5F969 /* home_can_change_bg_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_can_change_bg_01.png; sourceTree = "<group>"; };
+		EAC709C91D82A3AA00A5F969 /* home_can_change_bg_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_can_change_bg_02.png; sourceTree = "<group>"; };
+		EAC709CA1D82A3AA00A5F969 /* home_can_change_bg_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_can_change_bg_03.png; sourceTree = "<group>"; };
+		EAC709CB1D82A3AA00A5F969 /* home_can_change_bg_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_can_change_bg_04.png; sourceTree = "<group>"; };
+		EAC709D01D82A58800A5F969 /* icon_home_magnifier_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_home_magnifier_green.png; sourceTree = "<group>"; };
+		EAC709D21D82A5A300A5F969 /* menu_add_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_add_green.png; sourceTree = "<group>"; };
+		EAC709D51D82A61000A5F969 /* HeSearchInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeSearchInfoVC.h; sourceTree = "<group>"; };
+		EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeSearchInfoVC.m; sourceTree = "<group>"; };
+		EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeSearchInfoVC.xib; sourceTree = "<group>"; };
 		EAD46F351D80738800196D46 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		EAD46F361D80738800196D46 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		EAD46F371D80738800196D46 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -2117,6 +2141,9 @@
 				EA0663021D12F5FF00B45359 /* HeCommunityVC.h */,
 				EA0663031D12F5FF00B45359 /* HeCommunityVC.m */,
 				EA0663041D12F5FF00B45359 /* HeCommunityVC.xib */,
+				EAC709C31D829E1200A5F969 /* HeDistributeMoodVC.h */,
+				EAC709C41D829E1200A5F969 /* HeDistributeMoodVC.m */,
+				EAC709C51D829E1200A5F969 /* HeDistributeMoodVC.xib */,
 			);
 			name = Community;
 			sourceTree = "<group>";
@@ -2266,6 +2293,13 @@
 		EA184A6C1D16FD960065440C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				EAC709D21D82A5A300A5F969 /* menu_add_green.png */,
+				EAC709D01D82A58800A5F969 /* icon_home_magnifier_green.png */,
+				EAC709C81D82A3AA00A5F969 /* home_can_change_bg_01.png */,
+				EAC709C91D82A3AA00A5F969 /* home_can_change_bg_02.png */,
+				EAC709CA1D82A3AA00A5F969 /* home_can_change_bg_03.png */,
+				EAC709CB1D82A3AA00A5F969 /* home_can_change_bg_04.png */,
+				EAC709C11D829CF700A5F969 /* menu_add.png */,
 				EA184A6A1D16FD910065440C /* user_placeholder_icon.png */,
 			);
 			name = Custom;
@@ -3996,6 +4030,7 @@
 		EA4FECA01D0CF9DE00533239 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EAC709D41D82A60500A5F969 /* Search */,
 				EA890C071D17D97B0018773C /* Notification */,
 				EA0662FC1D12F5D800B45359 /* User */,
 				EA0662FB1D12F5D300B45359 /* Order */,
@@ -4507,6 +4542,16 @@
 			name = Notification;
 			sourceTree = "<group>";
 		};
+		EAC709D41D82A60500A5F969 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EAC709D51D82A61000A5F969 /* HeSearchInfoVC.h */,
+				EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */,
+				EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		EAD46F341D80738800196D46 /* BaiduMap_SDK_v3.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4747,6 +4792,7 @@
 				EA4FED9D1D0CFEC000533239 /* AlbumOperateMoreViewBkg@2x.png in Resources */,
 				EA890B951D17D0410018773C /* directComment_default.png in Resources */,
 				EA890BAE1D17D0410018773C /* log_praise.png in Resources */,
+				EAC709CD1D82A3AA00A5F969 /* home_can_change_bg_02.png in Resources */,
 				EA4FEAFC1D0CF65A00533239 /* LICENSE.txt in Resources */,
 				EA0663691D139D5F00B45359 /* HeBaseTableViewCell.xib in Resources */,
 				EA890B9A1D17D0410018773C /* down.png in Resources */,
@@ -4766,6 +4812,7 @@
 				EA890BCD1D17D0410018773C /* user_placeholder_icon.png in Resources */,
 				EA4FEAA21D0CF65A00533239 /* grayArrow.png in Resources */,
 				EA890B901D17D0410018773C /* CheckBoxSelected.png in Resources */,
+				EAC709D91D82A61000A5F969 /* HeSearchInfoVC.xib in Resources */,
 				EA890B841D17D0410018773C /* activity_typeIcon.png in Resources */,
 				EA890BA01D17D0410018773C /* home_h.png in Resources */,
 				EA890B891D17D0410018773C /* album_uncheckBox.png in Resources */,
@@ -4802,6 +4849,7 @@
 				EA4FEAA31D0CF65A00533239 /* grayArrow@2x.png in Resources */,
 				EA890BA21D17D0410018773C /* huayoutong_logo.png in Resources */,
 				EA4FEB7E1D0CF65A00533239 /* btn_021@2x.png in Resources */,
+				EAC709C21D829CF700A5F969 /* menu_add.png in Resources */,
 				EA890B811D17D0410018773C /* activity_addressIcon.png in Resources */,
 				EA4FED9C1D0CFEC000533239 /* AlbumOperateMoreHL@3x.png in Resources */,
 				EA4FEB5E1D0CF65A00533239 /* sharemore_pic@3x.png in Resources */,
@@ -4822,13 +4870,16 @@
 				EA06631B1D12F7FE00B45359 /* tabar_community_icon_active@2x.png in Resources */,
 				EA0663141D12F7C400B45359 /* tabbar_normal_background.png in Resources */,
 				EA184A671D16FA310065440C /* user_order_waitPay.png in Resources */,
+				EAC709D31D82A5A300A5F969 /* menu_add_green.png in Resources */,
 				EA890BE41D17D4570018773C /* HeModifyPasswordVC.xib in Resources */,
 				EA890B931D17D0410018773C /* comment.png in Resources */,
 				EA890B9F1D17D0410018773C /* hd.png in Resources */,
 				EA890BD41D17D0410018773C /* userInfo_message_record.png in Resources */,
 				EA0663441D13040C00B45359 /* bg_home_b.png in Resources */,
 				EA890BB31D17D0410018773C /* message_record.png in Resources */,
+				EAC709D11D82A58800A5F969 /* icon_home_magnifier_green.png in Resources */,
 				EA4FEA991D0CF65A00533239 /* i2KEPCMultiComponentPickerView.xib in Resources */,
+				EAC709CE1D82A3AA00A5F969 /* home_can_change_bg_03.png in Resources */,
 				EA890BB71D17D0410018773C /* navigationBar_back_icon.png in Resources */,
 				EA890BB11D17D0410018773C /* login_password_icon.png in Resources */,
 				EA4FEAC31D0CF65A00533239 /* MJPhotoBrowser.bundle in Resources */,
@@ -4886,7 +4937,9 @@
 				EA0663521D13041700B45359 /* icon_home_fruits.png in Resources */,
 				EA4FEAD91D0CF65A00533239 /* MJRefresh.bundle in Resources */,
 				EA890BDF1D17D3DA0018773C /* HeUserInfoVC.xib in Resources */,
+				EAC709CC1D82A3AA00A5F969 /* home_can_change_bg_01.png in Resources */,
 				EA890BF31D17D4CC0018773C /* HeReSetPSWVC.xib in Resources */,
+				EAC709C71D829E1200A5F969 /* HeDistributeMoodVC.xib in Resources */,
 				EA4FEC941D0CF91700533239 /* README.txt in Resources */,
 				EA0663361D12FD7100B45359 /* HeMainPageFirstCell.xib in Resources */,
 				EA4FEA8B1D0CF65A00533239 /* refresh@2x.png in Resources */,
@@ -4938,6 +4991,7 @@
 				EA4FEB5D1D0CF65A00533239 /* sharemore_pic@2x.png in Resources */,
 				EA0662F01D12E23900B45359 /* NavBarIOS7_white.png in Resources */,
 				EA890BA61D17D0410018773C /* ImageSelectedSmallOff@2x.png in Resources */,
+				EAC709CF1D82A3AA00A5F969 /* home_can_change_bg_04.png in Resources */,
 				EA0662F81D12E4A400B45359 /* icon-weixin.png in Resources */,
 				EA4FED991D0CFEC000533239 /* AlbumOperateMore@2x.png in Resources */,
 				EA184A6B1D16FD910065440C /* user_placeholder_icon.png in Resources */,
@@ -4999,6 +5053,8 @@
 				EA4FEB921D0CF65A00533239 /* README.md in Sources */,
 				EA4FEA651D0CF65A00533239 /* NSMutableDictionary+JSON.m in Sources */,
 				EA4FEB381D0CF65A00533239 /* RACSignal.m in Sources */,
+				EAC709C61D829E1200A5F969 /* HeDistributeMoodVC.m in Sources */,
+				EAC709D81D82A61000A5F969 /* HeSearchInfoVC.m in Sources */,
 				EA4FEB5A1D0CF65A00533239 /* UITextView+RACSignalSupport.m in Sources */,
 				EA4FEA6B1D0CF65A00533239 /* DFBaseTabBarController.m in Sources */,
 				EA4FEDB41D0CFEC000533239 /* DFBaseUserLineCell.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "HeCommunityVC.h"
 #import "DFCommunityLineItem.h"
+#import "HeDistributeMoodVC.h"
 
 @interface HeCommunityVC ()
 @property(strong,nonatomic)NSMutableArray *dataSource;
@@ -57,6 +58,30 @@
     [super initView];
     //设置头部
     [self setHeader];
+    CGFloat itembuttonW = 25;
+    CGFloat itembuttonH = 25;
+    UIImage *searchIcon = [UIImage imageNamed:@"menu_add_green"];
+    @try {
+        itembuttonW = searchIcon.size.width / searchIcon.size.height * itembuttonH;
+    } @catch (NSException *exception) {
+        itembuttonW = 25;
+    } @finally {
+        
+    }
+    UIButton *searchButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, itembuttonW, itembuttonH)];
+    [searchButton setBackgroundImage:searchIcon forState:UIControlStateNormal];
+    [searchButton addTarget:self action:@selector(barButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    searchButton.tag = 1;
+    
+    UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithCustomView:searchButton];
+    self.navigationItem.rightBarButtonItem = searchItem;
+}
+
+- (void)barButtonItemClick:(UIBarButtonItem *)item
+{
+    HeDistributeMoodVC *distributeMoodVC = [[HeDistributeMoodVC alloc] init];
+    distributeMoodVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:distributeMoodVC animated:YES];
 }
 
 -(void)setHeader

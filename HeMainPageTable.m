@@ -123,12 +123,10 @@
     headView.userInteractionEnabled = YES;
     self.tableHeaderView = headView;
     
-    NSArray *UrlStringArray = @[@"title_logo1.jpg",
-                                @"title_logo2.jpg"];
+    NSArray *UrlStringArray = @[@"home_can_change_bg_01",@"home_can_change_bg_02",@"home_can_change_bg_03",@"home_can_change_bg_04"];
     
     
-    NSArray *titleArray = @[@"   title_logo1",
-                            @"   title_logo2"];
+    NSArray *titleArray = @[@"1",@"2",@"3",@"4"];
     
     
     //显示顺序和数组顺序一致
@@ -139,7 +137,7 @@
     picView.tag = SCROLLTAG;
     //显示顺序和数组顺序一致
     //设置标题显示文本数组
-    picView.titleData = titleArray;
+//    picView.titleData = titleArray;
     
     //占位图片,你可以在下载图片失败处修改占位图片
     
@@ -147,21 +145,11 @@
     
     //图片被点击事件,当前第几张图片被点击了,和数组顺序一致
     
+    __weak HeMainPageTable *weakSelf = self;
+    
     [picView setImageViewDidTapAtIndex:^(NSInteger index) {
-        switch (index) {
-            case 0:
-            {
-//                [self.serviceDelegate gotoWebWithUrl:@"http://218.108.140.246:8086/test/gzgz.html"];
-                break;
-            }
-            case 1:{
-                [self.serviceDelegate gotoWebWithUrl:@"http://218.108.140.246:8086/test/gzgz.html"];
-                break;
-            }
-            default:
-                break;
-        }
-        
+        [weakSelf.serviceDelegate selectIndex:index];
+
     }];
     
     //default is 2.0f,如果小于0.5不自动播放
@@ -345,6 +333,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return nil;
+    }
     UIView *headerview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 20)];
     headerview.backgroundColor = RGB(238, 238, 238, 1);
     return headerview;
@@ -352,6 +343,9 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
+    if (section == 0) {
+        return 0;
+    }
     return 20;
 }
 

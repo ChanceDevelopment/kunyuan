@@ -131,10 +131,8 @@
     page.numberOfPages = _MaxImageCount;
     page.currentPage = 0;
     
-    [self addSubview:page];
-    
-    
-    _PageControl = page;
+//    [self addSubview:page];
+//    _PageControl = page;
 }
 
 - (void)setStyle:(PageControlStyle)style {
@@ -175,7 +173,7 @@
 
 
 - (void)prepareTitleLabel {
-    
+    return;
     [self setStyle:PageControlAtRight];
 
    UIView *left = [self creatLabelBgView];

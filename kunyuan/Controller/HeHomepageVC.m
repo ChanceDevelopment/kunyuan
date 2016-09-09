@@ -8,6 +8,7 @@
 
 #import "HeHomepageVC.h"
 #import "HeMainPageTable.h"
+#import "HeSearchInfoVC.h"
 
 @interface HeHomepageVC ()<ServiceFunctionProtocol>
 @property(strong,nonatomic)IBOutlet HeMainPageTable *mainTable;
@@ -56,6 +57,31 @@
     [mainTable  setHeaderViewWithDataSource:nil];
     mainTable.serviceDelegate = self;
     [Tool setExtraCellLineHidden:mainTable];
+    
+    CGFloat itembuttonW = 25;
+    CGFloat itembuttonH = 25;
+    UIImage *searchIcon = [UIImage imageNamed:@"icon_home_magnifier_green"];
+    @try {
+        itembuttonW = searchIcon.size.width / searchIcon.size.height * itembuttonH;
+    } @catch (NSException *exception) {
+        itembuttonW = 25;
+    } @finally {
+        
+    }
+    UIButton *searchButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, itembuttonW, itembuttonH)];
+    [searchButton setBackgroundImage:searchIcon forState:UIControlStateNormal];
+    [searchButton addTarget:self action:@selector(barButtonItemClick:) forControlEvents:UIControlEventTouchUpInside];
+    searchButton.tag = 1;
+    
+    UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithCustomView:searchButton];
+    self.navigationItem.rightBarButtonItem = searchItem;
+}
+
+- (void)barButtonItemClick:(UIBarButtonItem *)item
+{
+    HeSearchInfoVC *searchInfoVC = [[HeSearchInfoVC alloc] init];
+    searchInfoVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:searchInfoVC animated:YES];
 }
 
 - (void)loadBanner
@@ -63,6 +89,22 @@
     NSMutableArray *bannerDataSource = nil;
 //    [mainTable initHeaderViewWithArray:bannerDataSource];
 }
+
+- (void)selectIndex:(NSInteger)selectIndex
+{
+    NSLog(@"selectIndex");
+}
+
+- (void)functionButtonClick:(UIButton *)sender
+{
+    NSLog(@"functionButtonClick");
+}
+
+- (void)gotoWebWithUrl:(NSString *)url
+{
+    NSLog(@"gotoWeb");
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

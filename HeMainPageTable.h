@@ -12,6 +12,7 @@
 
 - (void)functionButtonClick:(UIButton *)sender;
 - (void)gotoWebWithUrl:(NSString *)url;
+- (void)selectIndex:(NSInteger)selectIndex;
 
 @end
 
