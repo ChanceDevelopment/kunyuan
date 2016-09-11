@@ -60,7 +60,7 @@
     
     CGFloat itembuttonW = 25;
     CGFloat itembuttonH = 25;
-    UIImage *searchIcon = [UIImage imageNamed:@"icon_home_magnifier_green"];
+    UIImage *searchIcon = [UIImage imageNamed:@"icon_query_search"];
     @try {
         itembuttonW = searchIcon.size.width / searchIcon.size.height * itembuttonH;
     } @catch (NSException *exception) {

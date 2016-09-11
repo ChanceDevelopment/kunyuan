@@ -731,6 +731,8 @@
 		EAC709D31D82A5A300A5F969 /* menu_add_green.png in Resources */ = {isa = PBXBuildFile; fileRef = EAC709D21D82A5A300A5F969 /* menu_add_green.png */; };
 		EAC709D81D82A61000A5F969 /* HeSearchInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */; };
 		EAC709D91D82A61000A5F969 /* HeSearchInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */; };
+		EAD0C1EC1D83AAE300F42E78 /* HeSearchInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD0C1EB1D83AAE300F42E78 /* HeSearchInfoCell.m */; };
+		EAD0C1EE1D83B68600F42E78 /* icon_query_search.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD0C1ED1D83B68600F42E78 /* icon_query_search.png */; };
 		EAD46F3E1D80738800196D46 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F351D80738800196D46 /* BaiduMapAPI_Base.framework */; };
 		EAD46F3F1D80738900196D46 /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F361D80738800196D46 /* BaiduMapAPI_Cloud.framework */; };
 		EAD46F401D80738900196D46 /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD46F371D80738800196D46 /* BaiduMapAPI_Location.framework */; };
@@ -2005,6 +2007,9 @@
 		EAC709D51D82A61000A5F969 /* HeSearchInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeSearchInfoVC.h; sourceTree = "<group>"; };
 		EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeSearchInfoVC.m; sourceTree = "<group>"; };
 		EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeSearchInfoVC.xib; sourceTree = "<group>"; };
+		EAD0C1EA1D83AAE300F42E78 /* HeSearchInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeSearchInfoCell.h; sourceTree = SOURCE_ROOT; };
+		EAD0C1EB1D83AAE300F42E78 /* HeSearchInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeSearchInfoCell.m; sourceTree = SOURCE_ROOT; };
+		EAD0C1ED1D83B68600F42E78 /* icon_query_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_query_search.png; sourceTree = "<group>"; };
 		EAD46F351D80738800196D46 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		EAD46F361D80738800196D46 /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		EAD46F371D80738800196D46 /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -2293,6 +2298,7 @@
 		EA184A6C1D16FD960065440C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				EAD0C1ED1D83B68600F42E78 /* icon_query_search.png */,
 				EAC709D21D82A5A300A5F969 /* menu_add_green.png */,
 				EAC709D01D82A58800A5F969 /* icon_home_magnifier_green.png */,
 				EAC709C81D82A3AA00A5F969 /* home_can_change_bg_01.png */,
@@ -4386,6 +4392,7 @@
 		EA4FEDB61D0CFED600533239 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EAD0C1E91D83AAD800F42E78 /* Search */,
 				EA890C0D1D17DA420018773C /* Notification */,
 				EA0663641D139D4700B45359 /* Base */,
 				EA0663631D139D3700B45359 /* Order */,
@@ -4548,6 +4555,15 @@
 				EAC709D51D82A61000A5F969 /* HeSearchInfoVC.h */,
 				EAC709D61D82A61000A5F969 /* HeSearchInfoVC.m */,
 				EAC709D71D82A61000A5F969 /* HeSearchInfoVC.xib */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		EAD0C1E91D83AAD800F42E78 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EAD0C1EA1D83AAE300F42E78 /* HeSearchInfoCell.h */,
+				EAD0C1EB1D83AAE300F42E78 /* HeSearchInfoCell.m */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -4768,6 +4784,7 @@
 				EA890BCA1D17D0410018773C /* time.png in Resources */,
 				EA4FEA4A1D0CF65A00533239 /* LICENSE in Resources */,
 				EA0663451D13040C00B45359 /* bg_home_c.png in Resources */,
+				EAD0C1EE1D83B68600F42E78 /* icon_query_search.png in Resources */,
 				EA890BA31D17D0410018773C /* ic_arrow_left_disabled.png in Resources */,
 				EA890BFD1D17D6F50018773C /* HeSettingVC.xib in Resources */,
 				EA4FEB701D0CF65A00533239 /* sr_refresh@2X.png in Resources */,
@@ -5154,6 +5171,7 @@
 				EA4FEB741D0CF65A00533239 /* README.md in Sources */,
 				EA4FE75E1D0CF63100533239 /* NSString+Valid.m in Sources */,
 				EA4FEA6D1D0CF65A00533239 /* DFBaseViewController.m in Sources */,
+				EAD0C1EC1D83AAE300F42E78 /* HeSearchInfoCell.m in Sources */,
 				EA4FEBC61D0CF6FA00533239 /* bitstream.c in Sources */,
 				EA4FEA601D0CF65A00533239 /* CPTextViewPlaceholder.m in Sources */,
 				EA4FEAE61D0CF65A00533239 /* NSAttributedString+MLLabel.m in Sources */,

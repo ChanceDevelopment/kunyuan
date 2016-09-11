@@ -100,8 +100,9 @@
 #define EMPTYSTRING @"     : "
 //默认绿色的RGB
 #define APPDEFAULTORANGE ([UIColor colorWithRed:51.0 / 255.0 green:185.0 / 255.0 blue:170.0 / 255.0 alpha:1.0])
+#define APPNARVIGATIONBARCOLOR ([UIColor whiteColor])
 //默认标题颜色
-#define APPDEFAULTTITLECOLOR ([UIColor whiteColor])
+#define APPDEFAULTTITLECOLOR ([UIColor blackColor])
 //默认标题的字体
 #define APPDEFAULTTITLETEXTFONT ([UIFont fontWithName:@"Helvetica" size:20.0])
 //默认table的背景颜色

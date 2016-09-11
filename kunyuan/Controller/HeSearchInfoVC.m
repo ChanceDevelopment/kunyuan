@@ -85,6 +85,8 @@
 {
     [super initView];
     [Tool setExtraCellLineHidden:infoTable];
+
+    
     CGFloat itembuttonW = 25;
     CGFloat itembuttonH = 25;
     
