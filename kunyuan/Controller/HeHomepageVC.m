@@ -9,14 +9,15 @@
 #import "HeHomepageVC.h"
 #import "HeMainPageTable.h"
 #import "HeSearchInfoVC.h"
+#import "MJRefresh.h"
 
 @interface HeHomepageVC ()<ServiceFunctionProtocol>
-@property(strong,nonatomic)IBOutlet HeMainPageTable *mainTable;
+@property(strong,nonatomic)IBOutlet HeMainPageTable *tableview;
 
 @end
 
 @implementation HeHomepageVC
-@synthesize mainTable;
+@synthesize tableview;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,11 +53,11 @@
 {
     [super initView];
     
-    [mainTable initView];
-    [mainTable initHeaderView];
-    [mainTable  setHeaderViewWithDataSource:nil];
-    mainTable.serviceDelegate = self;
-    [Tool setExtraCellLineHidden:mainTable];
+    [tableview initView];
+    [tableview initHeaderView];
+    [tableview  setHeaderViewWithDataSource:nil];
+    tableview.serviceDelegate = self;
+    [Tool setExtraCellLineHidden:tableview];
     
     CGFloat itembuttonW = 25;
     CGFloat itembuttonH = 25;
@@ -75,6 +76,30 @@
     
     UIBarButtonItem *searchItem = [[UIBarButtonItem alloc] initWithCustomView:searchButton];
     self.navigationItem.rightBarButtonItem = searchItem;
+    
+    self.tableview.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        // 进入刷新状态后会自动调用这个block,刷新
+        [self.tableview.header performSelector:@selector(endRefreshing) withObject:nil afterDelay:1.0];
+    }];
+    
+    self.tableview.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        self.tableview.footer.automaticallyHidden = YES;
+        self.tableview.footer.hidden = NO;
+        // 进入刷新状态后会自动调用这个block，加载更多
+        [self performSelector:@selector(endRefreshing) withObject:nil afterDelay:1.0];
+    }];
+}
+
+- (void)endRefreshing
+{
+    [self.tableview.footer endRefreshing];
+    self.tableview.footer.hidden = YES;
+    self.tableview.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        self.tableview.footer.automaticallyHidden = YES;
+        self.tableview.footer.hidden = NO;
+        // 进入刷新状态后会自动调用这个block，加载更多
+        [self performSelector:@selector(endRefreshing) withObject:nil afterDelay:1.0];
+    }];
 }
 
 - (void)barButtonItemClick:(UIBarButtonItem *)item
