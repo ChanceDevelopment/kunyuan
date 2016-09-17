@@ -20,6 +20,7 @@
 #import "WXApi.h"
 #import "WeiboSDK.h"
 #import "BrowserView.h"
+#import "HeNotifyCell.h"
 
 @interface AppDelegate ()
 
