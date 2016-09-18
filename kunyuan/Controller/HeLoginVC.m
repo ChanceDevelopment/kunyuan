@@ -79,7 +79,34 @@
 
 - (IBAction)loginMethod:(id)sender
 {
-
+    [self showHudInView:self.view hint:@"登录中..."];
+    NSString *account = @"";
+    NSString *password = @"";
+    NSString *loginUrl = [NSString stringWithFormat:@"%@/user/userLogin.action",BASEURL];
+    NSDictionary *loginParams = @{@"userName":account,@"userPwd":password};
+    [AFHttpTool requestWihtMethod:RequestMethodTypePost url:loginUrl params:loginParams  success:^(AFHTTPRequestOperation* operation,id response){
+        [self hideHud];
+        NSString *respondString = [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding];
+        
+        NSDictionary *respondDict = [respondString objectFromJSONString];
+        NSInteger errorCode = [[respondDict objectForKey:@"errorCode"] integerValue];
+        if (errorCode == REQUESTCODE_SUCCEED) {
+            
+            [[NSUserDefaults standardUserDefaults] setObject:account forKey:USERACCOUNTKEY];
+            [[NSUserDefaults standardUserDefaults] setObject:password forKey:USERPASSWORDKEY];
+            //发送自动登陆状态通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@YES];
+        }
+        else{
+            [self hideHud];
+            NSString *error = ERRORREQUESTTIP;
+            [self showHint:error];
+        }
+        
+    } failure:^(NSError *error){
+        [self hideHud];
+        [self showHint:ERRORREQUESTTIP];
+    }];
 }
 
 - (IBAction)findPassword:(id)sender

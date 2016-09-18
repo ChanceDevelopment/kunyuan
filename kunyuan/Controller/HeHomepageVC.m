@@ -112,7 +112,11 @@
 - (void)loadBanner
 {
     NSMutableArray *bannerDataSource = nil;
-//    [mainTable initHeaderViewWithArray:bannerDataSource];
+}
+
+- (void)loadFood
+{
+
 }
 
 - (void)selectIndex:(NSInteger)selectIndex
