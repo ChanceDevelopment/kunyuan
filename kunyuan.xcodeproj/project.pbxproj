@@ -4610,7 +4610,6 @@
 		EAF785AF1CFC87F600820CE0 /* kunyuan */ = {
 			isa = PBXGroup;
 			children = (
-				EAD231CC1D8E5D8600137E55 /* 猪美巴外卖.entitlements */,
 				EA0662EC1D12E22800B45359 /* Resource */,
 				EA4FECD41D0CFCD100533239 /* Model */,
 				EA4FECA01D0CF9DE00533239 /* Controller */,
@@ -4638,6 +4637,7 @@
 		EAF785B01CFC87F600820CE0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EAD231CC1D8E5D8600137E55 /* 猪美巴外卖.entitlements */,
 				EAF785B11CFC87F600820CE0 /* main.m */,
 				EA5034AA1D0BAFCE00F15720 /* kunyuan-Prefix.pch */,
 				EA4FECD31D0CFC9600533239 /* kunyuangDefine.h */,
