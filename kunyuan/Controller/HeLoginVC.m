@@ -79,19 +79,34 @@
 
 - (IBAction)loginMethod:(id)sender
 {
+    if ([accountField isFirstResponder]) {
+        [accountField resignFirstResponder];
+    }
+    if ([passwordField isFirstResponder]) {
+        [passwordField resignFirstResponder];
+    }
+    NSString *account = accountField.text;
+    NSString *password = passwordField.text;
+    NSString *token = @"token";
+    if (account == nil || [account isEqualToString:@""]) {
+        [self showHint:@"请输入登录账号"];
+        return;
+    }
+    if (password == nil || [password isEqualToString:@""]) {
+        [self showHint:@"请输入登录密码"];
+        return;
+    }
     [self showHudInView:self.view hint:@"登录中..."];
-    NSString *account = @"";
-    NSString *password = @"";
-    NSString *loginUrl = [NSString stringWithFormat:@"%@/user/userLogin.action",BASEURL];
-    NSDictionary *loginParams = @{@"userName":account,@"userPwd":password};
+    
+    NSString *loginUrl = [NSString stringWithFormat:@"%@/core/anyone/cust/login.do",BASEURL];
+    NSDictionary *loginParams = @{@"account":account,@"password":password,@"token":token};
     [AFHttpTool requestWihtMethod:RequestMethodTypePost url:loginUrl params:loginParams  success:^(AFHTTPRequestOperation* operation,id response){
         [self hideHud];
         NSString *respondString = [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding];
         
         NSDictionary *respondDict = [respondString objectFromJSONString];
-        NSInteger errorCode = [[respondDict objectForKey:@"errorCode"] integerValue];
-        if (errorCode == REQUESTCODE_SUCCEED) {
-            
+        NSString *result = [respondDict objectForKey:@"success"];
+        if ([result compare:@"true" options:NSCaseInsensitiveSearch]) {
             [[NSUserDefaults standardUserDefaults] setObject:account forKey:USERACCOUNTKEY];
             [[NSUserDefaults standardUserDefaults] setObject:password forKey:USERPASSWORDKEY];
             //发送自动登陆状态通知
