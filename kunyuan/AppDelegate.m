@@ -141,6 +141,7 @@ BMKMapManager* _mapManager;
         UIImage *navBackgroundImage = [UIImage imageNamed:@"NavBarIOS7"];
         [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
         NSDictionary *attributeDict = @{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont systemFontOfSize:20.0]};
+        
         [[UINavigationBar appearance] setTitleTextAttributes:attributeDict];
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
     }
