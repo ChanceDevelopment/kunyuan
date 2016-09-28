@@ -497,7 +497,6 @@
 		EA4FEC961D0CF91700533239 /* ShareSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EA4FEC891D0CF91600533239 /* ShareSDK.bundle */; };
 		EA4FEC971D0CF91700533239 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4FEC8A1D0CF91600533239 /* ShareSDKConnector.framework */; };
 		EA4FEC9A1D0CF97700533239 /* UMMobClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4FEC991D0CF97700533239 /* UMMobClick.framework */; };
-		EA4FEC9F1D0CF9AC00533239 /* jpush-ios-2.1.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4FEC9D1D0CF9AC00533239 /* jpush-ios-2.1.7.a */; };
 		EA4FECAE1D0CF9DE00533239 /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECA31D0CF9DE00533239 /* CustomNavigationController.m */; };
 		EA4FECAF1D0CF9DE00533239 /* HeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FECA51D0CF9DE00533239 /* HeBaseViewController.m */; };
 		EA4FECB01D0CF9DE00533239 /* HeBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4FECA61D0CF9DE00533239 /* HeBaseViewController.xib */; };
@@ -747,6 +746,7 @@
 		EAF785C01CFC87F600820CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAF785BE1CFC87F600820CE0 /* LaunchScreen.storyboard */; };
 		EAF785CB1CFC87F600820CE0 /* kunyuanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785CA1CFC87F600820CE0 /* kunyuanTests.m */; };
 		EAF785D61CFC87F600820CE0 /* kunyuanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAF785D51CFC87F600820CE0 /* kunyuanUITests.m */; };
+		EAFC13691D9B6F0C005D00AB /* jpush-ios-2.1.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFC13671D9B6F0C005D00AB /* jpush-ios-2.1.9.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1684,8 +1684,6 @@
 		EA4FEC891D0CF91600533239 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDK.bundle; sourceTree = "<group>"; };
 		EA4FEC8A1D0CF91600533239 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		EA4FEC991D0CF97700533239 /* UMMobClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMMobClick.framework; sourceTree = "<group>"; };
-		EA4FEC9D1D0CF9AC00533239 /* jpush-ios-2.1.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.7.a"; sourceTree = "<group>"; };
-		EA4FEC9E1D0CF9AC00533239 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		EA4FECA21D0CF9DE00533239 /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
 		EA4FECA31D0CF9DE00533239 /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
 		EA4FECA41D0CF9DE00533239 /* HeBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeBaseViewController.h; sourceTree = "<group>"; };
@@ -2031,6 +2029,8 @@
 		EAF785D11CFC87F600820CE0 /* kunyuanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kunyuanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAF785D51CFC87F600820CE0 /* kunyuanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kunyuanUITests.m; sourceTree = "<group>"; };
 		EAF785D71CFC87F600820CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFC13671D9B6F0C005D00AB /* jpush-ios-2.1.9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-2.1.9.a"; sourceTree = "<group>"; };
+		EAFC13681D9B6F0C005D00AB /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2064,7 +2064,6 @@
 				EA5034C71D0BB10700F15720 /* libicucore.tbd in Frameworks */,
 				EAD46F421D80738900196D46 /* BaiduMapAPI_Radar.framework in Frameworks */,
 				EAD46F411D80738900196D46 /* BaiduMapAPI_Map.framework in Frameworks */,
-				EA4FEC9F1D0CF9AC00533239 /* jpush-ios-2.1.7.a in Frameworks */,
 				EA4FEC9A1D0CF97700533239 /* UMMobClick.framework in Frameworks */,
 				EA5034C51D0BB0F300F15720 /* libstdc++.tbd in Frameworks */,
 				EA5034C31D0BB0EA00F15720 /* JavaScriptCore.framework in Frameworks */,
@@ -2078,6 +2077,7 @@
 				EA5034BB1D0BB0C700F15720 /* AddressBook.framework in Frameworks */,
 				EA5034B91D0BB0BB00F15720 /* MapKit.framework in Frameworks */,
 				EA5034B71D0BB0B200F15720 /* Accounts.framework in Frameworks */,
+				EAFC13691D9B6F0C005D00AB /* jpush-ios-2.1.9.a in Frameworks */,
 				EA4FEBEC1D0CF70100533239 /* libzbar.a in Frameworks */,
 				EA5034B51D0BB0AA00F15720 /* CoreData.framework in Frameworks */,
 				EA4FEC911D0CF91700533239 /* libWeiboSDK.a in Frameworks */,
@@ -3650,8 +3650,8 @@
 		EA4FEB961D0CF6D300533239 /* ThirdPartySDK */ = {
 			isa = PBXGroup;
 			children = (
+				EAFC13661D9B6F0C005D00AB /* JPushSDK */,
 				EAD46F341D80738800196D46 /* BaiduMap_SDK_v3.0 */,
-				EA4FEC9B1D0CF9AC00533239 /* JPush-iOS-SDK-2.1.7 */,
 				EA4FEC981D0CF97700533239 /* umsdk_IOS_analyics_no-idfa_v4.0.5 */,
 				EA4FEC681D0CF91600533239 /* ShareSDK3.3.0 */,
 				EA4FEBF11D0CF70E00533239 /* QiniuSDK */,
@@ -4010,23 +4010,6 @@
 				EA4FEC991D0CF97700533239 /* UMMobClick.framework */,
 			);
 			path = "umsdk_IOS_analyics_no-idfa_v4.0.5";
-			sourceTree = "<group>";
-		};
-		EA4FEC9B1D0CF9AC00533239 /* JPush-iOS-SDK-2.1.7 */ = {
-			isa = PBXGroup;
-			children = (
-				EA4FEC9C1D0CF9AC00533239 /* lib */,
-			);
-			path = "JPush-iOS-SDK-2.1.7";
-			sourceTree = "<group>";
-		};
-		EA4FEC9C1D0CF9AC00533239 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				EA4FEC9D1D0CF9AC00533239 /* jpush-ios-2.1.7.a */,
-				EA4FEC9E1D0CF9AC00533239 /* JPUSHService.h */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		EA4FECA01D0CF9DE00533239 /* Controller */ = {
@@ -4662,6 +4645,15 @@
 				EAF785D71CFC87F600820CE0 /* Info.plist */,
 			);
 			path = kunyuanUITests;
+			sourceTree = "<group>";
+		};
+		EAFC13661D9B6F0C005D00AB /* JPushSDK */ = {
+			isa = PBXGroup;
+			children = (
+				EAFC13671D9B6F0C005D00AB /* jpush-ios-2.1.9.a */,
+				EAFC13681D9B6F0C005D00AB /* JPUSHService.h */,
+			);
+			path = JPushSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5610,6 +5602,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
+					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPushSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
@@ -5755,6 +5748,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
+					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPushSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
@@ -5793,6 +5787,7 @@
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/ShareSDK3.3.0/Support/PlatformSDK/WeChatSDK",
 					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPush-iOS-SDK-2.1.7/lib",
+					"$(PROJECT_DIR)/kunyuan/ThirdPartySDK/JPushSDK",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.channce.kunyuan;
