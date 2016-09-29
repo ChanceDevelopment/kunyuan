@@ -412,7 +412,6 @@
 		EA4FEB851D0CF65A00533239 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA1C1D0CF65A00533239 /* NSString+FontAwesome.m */; };
 		EA4FEB861D0CF65A00533239 /* UIButton+associate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA1E1D0CF65A00533239 /* UIButton+associate.m */; };
 		EA4FEB871D0CF65A00533239 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA201D0CF65A00533239 /* UIButton+Bootstrap.m */; };
-		EA4FEB881D0CF65A00533239 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA221D0CF65A00533239 /* UIResponder+Router.m */; };
 		EA4FEB891D0CF65A00533239 /* UUDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA251D0CF65A00533239 /* UUDatePicker.m */; };
 		EA4FEB8A1D0CF65A00533239 /* UUDatePicker_DateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA271D0CF65A00533239 /* UUDatePicker_DateModel.m */; };
 		EA4FEB8B1D0CF65A00533239 /* VIPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4FEA2A1D0CF65A00533239 /* VIPhotoView.m */; };
@@ -1493,8 +1492,6 @@
 		EA4FEA1E1D0CF65A00533239 /* UIButton+associate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+associate.m"; sourceTree = "<group>"; };
 		EA4FEA1F1D0CF65A00533239 /* UIButton+Bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Bootstrap.h"; sourceTree = "<group>"; };
 		EA4FEA201D0CF65A00533239 /* UIButton+Bootstrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Bootstrap.m"; sourceTree = "<group>"; };
-		EA4FEA211D0CF65A00533239 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
-		EA4FEA221D0CF65A00533239 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		EA4FEA241D0CF65A00533239 /* UUDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUDatePicker.h; sourceTree = "<group>"; };
 		EA4FEA251D0CF65A00533239 /* UUDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUDatePicker.m; sourceTree = "<group>"; };
 		EA4FEA261D0CF65A00533239 /* UUDatePicker_DateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUDatePicker_DateModel.h; sourceTree = "<group>"; };
@@ -2473,8 +2470,6 @@
 				EA4FE9FF1D0CF65A00533239 /* SVProgressHUD */,
 				EA4FEA081D0CF65A00533239 /* TSLocateView */,
 				EA4FEA171D0CF65A00533239 /* UIButton+Category */,
-				EA4FEA211D0CF65A00533239 /* UIResponder+Router.h */,
-				EA4FEA221D0CF65A00533239 /* UIResponder+Router.m */,
 				EA4FEA231D0CF65A00533239 /* UUDatePicker_Block */,
 				EA4FEA281D0CF65A00533239 /* VIPhotoView */,
 				EA4FEA2B1D0CF65A00533239 /* Vurig Calendar */,
@@ -4725,6 +4720,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = E6CUH72B23;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -5402,7 +5400,6 @@
 				EA4FEDA61D0CFEC000533239 /* DFActivityDetailLineCell.m in Sources */,
 				EA4FEC4A1D0CF70E00533239 /* QNDnsManager.m in Sources */,
 				EA4FEA591D0CF65A00533239 /* ASIFormDataRequest.m in Sources */,
-				EA4FEB881D0CF65A00533239 /* UIResponder+Router.m in Sources */,
 				EA4FEB581D0CF65A00533239 /* UITableViewHeaderFooterView+RACSignalSupport.m in Sources */,
 				EA4FE7601D0CF63100533239 /* UIViewController+DismissKeyboard.m in Sources */,
 				EA4FEDA81D0CFEC000533239 /* DFBaseLineCell.m in Sources */,

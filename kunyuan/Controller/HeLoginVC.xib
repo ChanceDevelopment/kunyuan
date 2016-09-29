@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -25,7 +25,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="LSw-dI-09G"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <textInputTraits key="textInputTraits"/>
                             <variation key="default">
                                 <mask key="constraints">
@@ -42,8 +42,8 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="3RN-nU-KII"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             <variation key="default">
                                 <mask key="constraints">
                                     <exclude reference="3RN-nU-KII"/>
@@ -93,15 +93,15 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="eOl-Ym-7aG"/>
+                            <exclude reference="Bhs-hy-NvN"/>
+                            <exclude reference="lJG-FM-Wrh"/>
+                            <exclude reference="pPA-yY-RQ1"/>
                             <exclude reference="O2X-QY-cwz"/>
                             <exclude reference="qVZ-tV-f81"/>
                             <exclude reference="xOX-Qe-cgQ"/>
                             <exclude reference="d1u-h8-9ud"/>
                             <exclude reference="joI-vM-qCU"/>
                             <exclude reference="zsx-EQ-wDF"/>
-                            <exclude reference="Bhs-hy-NvN"/>
-                            <exclude reference="lJG-FM-Wrh"/>
-                            <exclude reference="pPA-yY-RQ1"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -112,15 +112,15 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="eOl-Ym-7aG"/>
+                            <include reference="Bhs-hy-NvN"/>
+                            <include reference="lJG-FM-Wrh"/>
+                            <include reference="pPA-yY-RQ1"/>
                             <include reference="O2X-QY-cwz"/>
                             <include reference="qVZ-tV-f81"/>
                             <include reference="xOX-Qe-cgQ"/>
                             <include reference="d1u-h8-9ud"/>
                             <include reference="joI-vM-qCU"/>
                             <include reference="zsx-EQ-wDF"/>
-                            <include reference="Bhs-hy-NvN"/>
-                            <include reference="lJG-FM-Wrh"/>
-                            <include reference="pPA-yY-RQ1"/>
                         </mask>
                     </variation>
                 </view>
@@ -320,6 +320,10 @@
                 <mask key="constraints">
                     <exclude reference="d37-03-uSm"/>
                     <exclude reference="hgY-UK-ffb"/>
+                    <exclude reference="OxK-7o-5Fj"/>
+                    <exclude reference="68H-6F-GOr"/>
+                    <exclude reference="MRP-M6-Lqg"/>
+                    <exclude reference="Rvb-mc-Msv"/>
                     <exclude reference="6Lg-pT-THo"/>
                     <exclude reference="MeI-fS-gFy"/>
                     <exclude reference="WAy-51-dEa"/>
@@ -332,10 +336,6 @@
                     <exclude reference="rIy-6A-s5q"/>
                     <exclude reference="nGK-rW-fVZ"/>
                     <exclude reference="qw4-ZL-9uJ"/>
-                    <exclude reference="OxK-7o-5Fj"/>
-                    <exclude reference="68H-6F-GOr"/>
-                    <exclude reference="MRP-M6-Lqg"/>
-                    <exclude reference="Rvb-mc-Msv"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -352,6 +352,10 @@
                 <mask key="constraints">
                     <include reference="d37-03-uSm"/>
                     <include reference="hgY-UK-ffb"/>
+                    <include reference="OxK-7o-5Fj"/>
+                    <include reference="68H-6F-GOr"/>
+                    <include reference="MRP-M6-Lqg"/>
+                    <include reference="Rvb-mc-Msv"/>
                     <include reference="6Lg-pT-THo"/>
                     <include reference="MeI-fS-gFy"/>
                     <include reference="WAy-51-dEa"/>
@@ -364,10 +368,6 @@
                     <include reference="rIy-6A-s5q"/>
                     <include reference="nGK-rW-fVZ"/>
                     <include reference="qw4-ZL-9uJ"/>
-                    <include reference="OxK-7o-5Fj"/>
-                    <include reference="68H-6F-GOr"/>
-                    <include reference="MRP-M6-Lqg"/>
-                    <include reference="Rvb-mc-Msv"/>
                 </mask>
             </variation>
         </view>

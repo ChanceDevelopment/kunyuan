@@ -105,8 +105,8 @@
         NSString *respondString = [[NSString alloc] initWithData:operation.responseData encoding:NSUTF8StringEncoding];
         
         NSDictionary *respondDict = [respondString objectFromJSONString];
-        NSString *result = [respondDict objectForKey:@"success"];
-        if ([result compare:@"true" options:NSCaseInsensitiveSearch]) {
+        id result = [respondDict objectForKey:@"success"];
+        if (([result isMemberOfClass:[NSString class]] && [result compare:@"true" options:NSCaseInsensitiveSearch]) || [result boolValue]) {
             [[NSUserDefaults standardUserDefaults] setObject:account forKey:USERACCOUNTKEY];
             [[NSUserDefaults standardUserDefaults] setObject:password forKey:USERPASSWORDKEY];
             //发送自动登陆状态通知

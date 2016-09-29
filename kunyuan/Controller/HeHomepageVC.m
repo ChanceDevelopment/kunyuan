@@ -114,7 +114,7 @@
     NSMutableArray *bannerDataSource = nil;
 }
 
-- (void)loadFood
+- (void)loadNearFood
 {
 
 }

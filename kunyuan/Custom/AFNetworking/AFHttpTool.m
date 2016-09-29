@@ -12,9 +12,9 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "ASIFormDataRequest.h"
 
-#define DEV_FAKE_SERVER @"http://114.55.33.250:8080/core" //Beijing SUN-QUAN  测试环境（北京）
-#define PRO_FAKE_SERVER @"http://114.55.33.250:8080/core" //Beijing Liu-Bei    线上环境（北京）、
-#define FAKE_SERVER @"http://114.55.33.250:8080/core"//@"http://119.254.110.241:80/" //Login 线下测试
+#define DEV_FAKE_SERVER @"http://114.55.33.250:8080" //Beijing SUN-QUAN  测试环境（北京）
+#define PRO_FAKE_SERVER @"http://114.55.33.250:8080" //Beijing Liu-Bei    线上环境（北京）、
+#define FAKE_SERVER @"http://114.55.33.250:8080"//@"http://119.254.110.241:80/" //Login 线下测试
 
 //#define ContentType @"text/plain"
 #define ContentType @"application/json"
